@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+ <title>營造法式 list</title>
+    <!-- CSS -->
+    <link href="../Content/Tools/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/Tools/prettify.css" rel="stylesheet" />
+    <link href="../Content/main.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="../Scripts/Tree/dhtmlxtree.css"/>
+	
+	<!-- Tool -->
+    <script src="../Scripts/Tools/JQuery/jquery-2.1.3.min.js"></script>
+    <script src="../Scripts/Tools/jquery.hotkeys.js"></script>
+    <script src="../Scripts/Tools/bootstrap/bootstrap.min.js"></script>
+    <script src="../Scripts/Tools/bootstrap-filestyle/bootstrap-filestyle.min.js"></script>
+    <script src="../Scripts/Tools/prettify.js"></script>
+    <script src="../Scripts/Tools/FileSaver/FileSaver.min.js"></script>
+	
+	<!-- three.js -->
+    <script src="../Scripts/Tools/three.js/three.min.js"></script>
+    <script src="../Scripts/Tools/three.js/js/controls/OrbitControls.js"></script>
+    <script src="../Scripts/Tools/three.js/js/exporters/STLBinaryExporter.js"></script>
+    <script src="../Scripts/Tools/three.js/js/exporters/STLExporter.js"></script>
+    <script src="../Scripts/Tools/three.js/js/libs/stats.min.js"></script>
+    <script src="../Scripts/Tools/three.js/js/loaders/ColladaLoader.js"></script>
+	
+	<!-- 我自己的內容 -->
+	<script src="../Scripts/View/ui.js"></script>
+	<script src="../Scripts/controller.js"></script>
+	<script src="../Scripts/View/sketchpad.js"></script>
+	<script src="../Scripts/Model/shape.js"></script>
+	<!-- Tree -->
+	<script src="../Scripts/Tree/dhtmlxtree.js"></script>
+	
+	
+	<script>
+
+        //var shape_draw = false;  //僅支援單栱,重栱,四鋪作(未加昂)
+        //var scale = 2.55;
+
+        //var shape_grammar_controller;
+
+        $(document).ready(function () {
+
+		addEventListener("message", function (event) {           
+                set_click(event.data); 
+        }, false);
+		
+            //shape_grammar_controller = new controller();
+        });
+		
+		var exploded_window;
+		var wait_time = 0;
+		var list_buf = [];
+		function openWindow() {
+		if(exploded_window && !exploded_window.closed)
+		  {
+			wait_time = 100;
+			}
+			else {
+			wait_time = 3500;
+			   exploded_window =window.open("../exploded_system.html");
+			  }
+		 }
+		 
+		 function sendMsg(obj)
+		 {
+			openWindow();
+			//var item = exploded_window.document.getElementById('detector_msg');
+			//item.value=obj;
+			list_buf.push(obj);
+			setTimeout(function(){ 
+			var locationurl = location.protocol + "//" + location.host;
+            var message = obj;
+            exploded_window.postMessage(message, locationurl);
+			},wait_time);
+			
+		 }
+		 
+		 function set_click(id_list)
+		 {
+			init_click();
+			
+			for (var x = 0; x < id_list.length; x++)
+			{
+				var classlist = document.getElementsByClassName(id_list[x]);
+				list_buf.push(id_list[x]);
+				for (var y = 0 ; y < classlist.length ; y++)
+				{
+					classlist[y].style.color="red";
+				}
+				
+			}
+		 }
+		 
+		 function init_click()
+		 {
+			for(var x = 0 ; x<list_buf.length ; x++)
+			{
+				var classlist = document.getElementsByClassName(list_buf[x]);
+				for (var y = 0 ; y < classlist.length ; y++)
+				{
+					classlist[y].style.color="#337ab7";
+				}
+			}
+			while (list_buf.length > 0) {
+            list_buf.pop();
+			}
+		 }
+		 
+
+		 
+		
+    </script>
+	
+	<!--<style>
+.index-list {
+    margin: 0.4cm 0.2cm 0.1cm 0.8cm;
+}
+
+</style>--> 
+	
+</head>
+<body>
+	
+								
+			<div class="tb_container" >									
+				<div class="part_container">
+					<h1><span class="mw-headline" id="ch1">材</span></h1>
+					<div class="index-list">
+					
+					<p>
+
+						○材（其名有三：一曰章，二曰材，三曰方桁。）凡構屋之製，皆以材為祖。材有八等，度屋之大小因而用之。</p>
+
+					<p>第一等：廣九寸，厚六寸（以六分為一分。）右殿身九間至十一間則用之。（若副階並殿挾屋，村分減殿身一等，廊屋減挾屋一等。餘準此。）</p>
+
+					<p>第二等：廣八寸二分五厘，厚五寸五分。（以五分五厘為一分。）右殿身五間至七間則用之。</p>
+
+					<p>第三等：廣七寸五分，厚五寸。（以五分為一分。）右殿身三間到殿五間或堂七間則用之。</p>
+
+					<p>第四等：廣七寸二分，厚四寸八分。（以四分八厘為一分。）右殿三間廳堂五間則用之。</p>
+
+					<p>第五等：廣六寸六分，厚四寸四分。（以四分四厘為一分。）右殿小三間、廳堂大三間則用之。</p>
+
+					<p>第六等：廣六寸，厚四寸。（以四分為一分。）右亭榭或小廳堂皆用之。</p>
+					
+					<p>第七等：廣五寸二分五厘，厚三寸五分。（以三分五厘為一分。）右小殿及亭榭等用之。</p>
+					
+					<p>第八等：廣四寸五分，厚三寸。（以三分為一分。）右殿內藻井或小亭榭施鋪作多則用之。</p>
+					
+					<p>契：廣六分，厚四分。材上加契者謂之足材。（施之栱眼內兩枓之間者，謂之闇契。）</p>
+					
+					<p>各以其材之廣分為十五分，以十分為其厚。凡屋宇之高深，名物之短長，曲直舉折之勢，規矩繩墨之宜，皆以所用材之分。以為製度焉。（凡分寸之分皆如字，材分之分音符問切。餘準此。）</p>
+						
+					
+					</div>
+		
+				</div>
+			</div>
+	
+	
+
+
+</body>
+<script>
+</script>
+</html>

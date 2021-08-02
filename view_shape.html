@@ -1,0 +1,273 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <link href="Content/Tools/bootstrap/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+
+        html,body
+		{
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            -ms-scroll-limit: 0 0 0 0;
+        }
+		#canvas
+		{
+			height: 95vh;
+			width : 100vw;
+		}
+
+    </style>
+
+    <script src="Scripts/Tools/JQuery/jquery-2.1.3.min.js"></script>
+    <script src="Scripts/Tools/jquery.hotkeys.js"></script>
+	<script src="Scripts/Tools/bootstrap/bootstrap.min.js"></script>
+	 <link href="Content/main.css" rel="stylesheet" />
+    <link href="Content/Tools/prettify.css" rel="stylesheet" />
+	
+
+    <!-- three.js -->
+    <script src="Scripts/Tools/three.js/three.min.js"></script>
+    <script src="Scripts/Tools/three.js/js/controls/OrbitControls.js"></script>
+    <script src="Scripts/Tools/three.js/js/libs/stats.min.js"></script>
+    <script src="Scripts/Tools/three.js/js/loaders/ColladaLoader.js"></script>
+
+
+    <script src="Scripts/View/sketchpad.js"></script>
+	<script src="Scripts/Model/shape.js"></script>
+	
+	<!--<script src="Scripts/Tools/Tween.js"></script>-->
+    <title></title>
+
+    <script>
+
+    var canvas;
+    var scale = 5;
+	var shape_manager ;
+	var target_symbol;
+	var loop_count = 0;
+	var myVar;
+	var loadevent;
+	var frame = 30;
+	
+	
+    $(document).ready(function () 
+	{
+
+		shape_manager = new shapeManager();
+        canvas = new sketchpad("canvas", "分解視圖");
+        canvas.init(60, 10, 10, -10);
+        canvas.add_stats();
+		detector();
+			
+		window.addEventListener('resize', onWindowResize, false);
+
+        $(document).bind('keydown', "shift+x", function () {
+            canvas.set_aixs("aixs_x");
+        });
+        $(document).bind('keydown', "shift+y", function () {
+            canvas.set_aixs("aixs_y");
+        });
+        $(document).bind('keydown', "shift+z", function () {
+            canvas.set_aixs("aixs_z");
+        });
+        $(document).bind('keydown', "shift+g", canvas.set_ground);
+
+    });
+	
+	function onWindowResize() 
+	{
+
+        canvas.onWindowResize();
+      
+    }
+
+    function update() 
+	{
+
+		canvas.animate();
+	
+    }
+	
+	//收到分解視圖資料
+	function detector()
+	{
+	//console.log("receive test" );
+		addEventListener("message", function (event) 
+		{
+			loadevent = event;
+			
+			var url = location.href;
+
+			for(var x = 0 ; x<event.data.length ; x++)
+			{
+				shape_manager.add(event.data[x].name, event.data[x].symbol, event.data[x].url, "dae",  0, event.data[x].color); // name, symbol, url, type, hide(0顯示), color(1未上色)
+				//console.log("color: "+event.data[x].color);
+				if(event.data[x].color == "0xff0000")
+				{
+					target_symbol = event.data[x].symbol;
+				}
+
+			}
+			setTimeout(function()
+			{
+				for(var x = 0 ; x<event.data.length ; x++)
+				{
+					open_example(event.data[x].symbol);//讀模型
+				}
+			},1000);
+			setTimeout(function(){color(target_symbol);
+			},1000);
+			
+			canvas.re_pos_withdata(event.data[0].center_x, event.data[0].center_y, event.data[0].center_z);//調整camera位置
+			
+			setTimeout(function()
+			{
+			
+				myVar = self.setInterval(
+				"loop_animate()", 100);/*動畫呈現*/
+			//}
+			},2000);
+
+        }, false);
+	}
+	
+	//重播
+	function replay()
+	{
+		loop_count = 0;
+		for(var x = 0 ; x<loadevent.data.length ; x++)
+		{
+			if(loadevent.data[x].symbol != target_symbol)
+			{
+				var model_obj = shape_manager.find_by_symbol(loadevent.data[x].symbol);
+				model_obj.get_model().position.y -=loadevent.data[x].dis_y;
+			}
+		}
+		myVar = self.setInterval(
+			"loop_animate()", 100);
+			
+		
+		
+	}
+	
+	//動畫
+	function loop_animate()
+	{
+		for(var x = 0 ; x<loadevent.data.length ; x++)
+		{
+			if(loadevent.data[x].symbol != target_symbol)
+			{
+				var model_obj = shape_manager.find_by_symbol(loadevent.data[x].symbol);
+				if(model_obj!=null)
+				{
+					model_obj.get_model().position.y +=(loadevent.data[x].dis_y/frame);
+					//update();
+					canvas.render();
+				}
+			}
+			
+		}
+		//console.log("count "+loop_count);
+		loop_count++;
+		if(loop_count == frame)
+		{
+			clearInterval(myVar);
+		}
+	}
+	
+	//上色
+	function color(symbol)
+	{
+		var material;
+		var model_obj = shape_manager.find_by_symbol(symbol);
+		if(model_obj != null)
+		{		
+		//console.log("~~");
+			material = new THREE.MeshPhongMaterial({ ambient: 0xff5533, color: 0xff0000, specular: 0x111111, shininess: 200 });//紅;
+			//model_obj.color = 1;
+			
+			model_obj.get_model().traverse(function (child) 
+			{
+				if (child instanceof THREE.Mesh) 
+				{
+					
+					child.material = material;
+					canvas.render();
+				}
+			});
+		}
+	}
+	
+	//讀取模型
+	function open_example(symbol)
+	{
+		console.log("open example dae "+symbol);
+		var model_obj = shape_manager.find_by_symbol(symbol);
+		if(model_obj!=null)
+		{
+			if(model_obj.hide == 0)
+			{
+
+				canvas.add_model(model_obj.get_model());
+				//console.log("open pos "+model_obj.get_model_x());
+				model_obj.hide = 1;
+			}
+			else
+			{
+			//console.log("!!!"+shape_manager.find_by_symbol(symbol).hide);
+				canvas.remove_model(model_obj.get_model());
+				model_obj.hide = 0;
+			}
+		}
+
+	}
+
+    </script>
+</head>
+<body>
+	<!-- 上方工具列 -->   
+    <div class="navbar navbar-default toolbar" role="navigation">
+        <ul class="nav navbar-nav">
+		 
+			
+		<!-- 檢視 -->
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    檢視
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#" onclick="canvas.set_aixs('aixs_x')">X軸</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="canvas.set_aixs('aixs_y')">Y軸</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="canvas.set_aixs('aixs_z')">Z軸</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#" onclick="canvas.set_ground()">地板</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="canvas.set_ground_grid()">地板格線</a>
+                    </li>
+                    
+                </ul>
+            </li>
+			<li>
+			<a href="#" onclick="replay()">重播</a>
+			</li>
+
+		</ul>
+	</div>
+	<!-- 主畫面 -->
+    
+    <div class="col-md-9" id="canvas"></div>
+	
+</body>
+</html>

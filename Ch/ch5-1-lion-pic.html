@@ -1,0 +1,559 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+ <title>營造法式 list</title>
+    <!-- CSS -->
+    <link href="../Content/Tools/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/Tools/prettify.css" rel="stylesheet" />
+    <link href="../Content/main.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="../Scripts/Tree/dhtmlxtree.css"/>
+	
+	<!-- Tool -->
+    <script src="../Scripts/Tools/JQuery/jquery-2.1.3.min.js"></script>
+	<script src="../Scripts/Tools/JQuery/jquery.maphilight.js"></script>
+    <script src="../Scripts/Tools/jquery.hotkeys.js"></script>
+    <script src="../Scripts/Tools/bootstrap/bootstrap.min.js"></script>
+    <script src="../Scripts/Tools/bootstrap-filestyle/bootstrap-filestyle.min.js"></script>
+    <script src="../Scripts/Tools/prettify.js"></script>
+    <script src="../Scripts/Tools/FileSaver/FileSaver.min.js"></script>
+	
+	<!-- three.js -->
+    <script src="../Scripts/Tools/three.js/three.min.js"></script>
+    <script src="../Scripts/Tools/three.js/js/controls/OrbitControls.js"></script>
+    <script src="../Scripts/Tools/three.js/js/exporters/STLBinaryExporter.js"></script>
+    <script src="../Scripts/Tools/three.js/js/exporters/STLExporter.js"></script>
+    <script src="../Scripts/Tools/three.js/js/libs/stats.min.js"></script>
+    <script src="../Scripts/Tools/three.js/js/loaders/ColladaLoader.js"></script>
+	
+	<!-- 我自己的內容 -->
+	<script src="../Scripts/View/ui.js"></script>
+	<script src="../Scripts/controller.js"></script>
+	<script src="../Scripts/View/sketchpad.js"></script>
+	<script src="../Scripts/Model/shape.js"></script>
+	<script src="../Scripts/ch_pic_controller.js"></script>
+	<!-- Tree -->
+	<script src="../Scripts/Tree/dhtmlxtree.js"></script>
+	
+
+	
+		<script>
+
+        var ch_pic_controller;
+		var RF_color = '0000ff', YCF_color = '0000ff', LEF_color = '0000ff', CFT_color = '0000ff', PCF_color = '0000ff', CTJG_color = '0000ff', JTF_color = '0000ff', PL_color = '0000ff', ZF_color = '0000ff';
+		var click_buf;
+
+        $(document).ready(function () {
+
+		/*	addEventListener("message", function (event) {           
+					if(event.data != event_data_buf)
+            {
+				event_data_buf = event.data;
+				set_click(event.data); 
+			} 
+			}, false);
+		*/
+			ch_pic_controller = new ch_pic_controller;
+			ch_pic_controller.detector();
+			jQuery(function() {
+				$('.mappic').maphilight({alwaysOn: true, fill: false, strokeColor: '0000ff', fillColor: 'ffff00'});
+				
+/*area hover event*/
+				/*for(var i=0 ; i<part_data_list.length ; i++)
+				{
+					
+					$("."+part_data_list[i].id).hover(function(){
+					console.log("hover test:" + part_data_list[i].id);
+					var data = {};
+					data.fill = true;
+					data.strokeColor = part_data_list[i].color;
+					$('area[alt='+part_data_list[i].id+'_area]').data('maphilight', data).trigger('alwaysOn.maphilight');
+						//console.log("hover test:" + $(this).name);
+						
+						}, function(){
+						var data = {};
+					data.fill = false;
+					data.strokeColor = part_data_list[i].color;
+					$('area[alt='+part_data_list[i].id+'_area]').data('maphilight', data).trigger('alwaysOn.maphilight');
+					
+					
+					});
+				}*/
+				$(".RF").hover(function(){
+				//console.log("hover test:" + obj.name);
+				var data = {};
+				data.fill = true;
+				data.strokeColor = RF_color;
+				$('area[alt="RF_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+					//console.log("hover test:" + $(this).name);
+					
+					}, function(){
+					var data = {};
+				data.fill = false;
+				data.strokeColor = RF_color;
+				$('area[alt="RF_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+				
+				
+				});
+				
+				$(".YCF").hover(function(){
+				//console.log("hover test:" + obj.name);
+				var data = {};
+				data.fill = true;
+				data.strokeColor = YCF_color;
+				$('area[alt="YCF_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+					//console.log("hover test:" + $(this).name);
+					
+					}, function(){
+					var data = {};
+				data.fill = false;
+				data.strokeColor = YCF_color;
+				$('area[alt="YCF_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+				
+				
+				});
+				
+				$(".LEF").hover(function(){
+				//console.log("hover test:" + obj.name);
+				var data = {};
+				data.fill = true;
+				data.strokeColor = LEF_color;
+				$('area[alt="LEF_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+					//console.log("hover test:" + $(this).name);
+					
+					}, function(){
+					var data = {};
+				data.fill = false;
+				data.strokeColor = LEF_color;
+				$('area[alt="LEF_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+				
+				
+				});
+				
+				$(".CFT").hover(function(){
+				//console.log("hover test:" + obj.name);
+				var data = {};
+				data.fill = true;
+				data.strokeColor = CFT_color;
+				$('area[alt="CFT_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+					//console.log("hover test:" + $(this).name);
+					
+					}, function(){
+					var data = {};
+				data.fill = false;
+				data.strokeColor = CFT_color;
+				$('area[alt="CFT_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+				
+				
+				});
+				
+				$(".PCF").hover(function(){
+				//console.log("hover test:" + obj.name);
+				var data = {};
+				data.fill = true;
+				data.strokeColor = PCF_color;
+				$('area[alt="PCF_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+					//console.log("hover test:" + $(this).name);
+					
+					}, function(){
+					var data = {};
+				data.fill = false;
+				data.strokeColor = PCF_color;
+				$('area[alt="PCF_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+				
+				
+				});
+				
+				$(".CTJG").hover(function(){
+				//console.log("hover test:" + obj.name);
+				var data = {};
+				data.fill = true;
+				data.strokeColor = CTJG_color;
+				$('area[alt="CTJG_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+					//console.log("hover test:" + $(this).name);
+					
+					}, function(){
+					var data = {};
+				data.fill = false;
+				data.strokeColor = CTJG_color;
+				$('area[alt="CTJG_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+				
+				
+				});
+				
+				$(".JTF").hover(function(){
+				//console.log("hover test:" + obj.name);
+				var data = {};
+				data.fill = true;
+				data.strokeColor = JTF_color;
+				$('area[alt="JTF_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+					//console.log("hover test:" + $(this).name);
+					
+					}, function(){
+					var data = {};
+				data.fill = false;
+				data.strokeColor = JTF_color;
+				$('area[alt="JTF_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+				
+				
+				});
+				
+				$(".PL").hover(function(){
+				//console.log("hover test:" + obj.name);
+				var data = {};
+				data.fill = true;
+				data.strokeColor = PL_color;
+				$('area[alt="PL_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+					//console.log("hover test:" + $(this).name);
+					
+					}, function(){
+					var data = {};
+				data.fill = false;
+				data.strokeColor = PL_color;
+				$('area[alt="PL_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+				
+				
+				});
+				
+				$(".ZF").hover(function(){
+				//console.log("hover test:" + obj.name);
+				var data = {};
+				data.fill = true;
+				data.strokeColor = ZF_color;
+				$('area[alt="ZF_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+					//console.log("hover test:" + $(this).name);
+					
+					}, function(){
+					var data = {};
+				data.fill = false;
+				data.strokeColor = ZF_color;
+				$('area[alt="ZF_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+				
+				
+				});
+				
+				
+/*area click event*/
+
+				/*for(var i=0 ; i<part_data_list.length ; i++)
+				{
+					$("."+part_data_list[i].id).click(function(e) {
+				
+					e.preventDefault();
+						var data = {};
+					after_click_color(part_data_list[i].id);
+					data.strokeColor = 'ff0000';
+					$('area[alt='+part_data_list[i].id+'_area]').data('maphilight', data).trigger('alwaysOn.maphilight');
+					  });
+				}*/
+				$('.RF').click(function(e) {
+				
+				e.preventDefault();
+					var data = {};
+				after_click_color("RF");
+				data.strokeColor = 'ff0000';
+				$('area[alt="RF_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+				  });
+				  
+				$('.YCF').click(function(e) {
+				
+				e.preventDefault();
+					var data = {};
+				after_click_color("YCF");
+				data.strokeColor = 'ff0000';
+				$('area[alt="YCF_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+				  });
+				  
+				$('.LEF').click(function(e) {
+				
+				e.preventDefault();
+					var data = {};
+				after_click_color("LEF");
+				data.strokeColor = 'ff0000';
+				$('area[alt="LEF_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+				  });
+				  
+				  
+				$('.CFT').click(function(e) {
+				
+				e.preventDefault();
+					var data = {};
+				after_click_color("CFT");
+				data.strokeColor = 'ff0000';
+				$('area[alt="CFT_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+				  });
+				  
+				$('.PCF').click(function(e) {
+				
+				e.preventDefault();
+					var data = {};
+				after_click_color("PCF");
+				data.strokeColor = 'ff0000';
+				$('area[alt="PCF_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+				  });
+				  
+				$('.CTJG').click(function(e) {
+				
+				e.preventDefault();
+					var data = {};
+				after_click_color("CTJG");
+				data.strokeColor = 'ff0000';
+				$('area[alt="CTJG_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+				  });
+				  
+				$('.JTF').click(function(e) {
+				
+				e.preventDefault();
+					var data = {};
+				after_click_color("JTF");
+				data.strokeColor = 'ff0000';
+				$('area[alt="JTF_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+				  });
+				  
+				$('.PL').click(function(e) {
+				
+				e.preventDefault();
+					var data = {};
+				after_click_color("PL");
+				data.strokeColor = 'ff0000';
+				$('area[alt="PL_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+				  });
+				  
+				$('.ZF').click(function(e) {
+				
+				e.preventDefault();
+					var data = {};
+				after_click_color("ZF");
+				data.strokeColor = 'ff0000';
+				$('area[alt="ZF_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+				  });
+			 
+			 
+			 
+			});
+			
+
+        });
+		
+		function after_click_color(now_click)
+		{
+			if(click_buf != null)
+				ch_pic_controller.init_color(click_buf);
+			
+			if(now_click == 'RF')
+			{
+				RF_color = 'ff0000';
+				YCF_color = '0000ff';
+				LEF_color = '0000ff';
+				CFT_color = '0000ff';
+				PCF_color = '0000ff';
+				CTJG_color = '0000ff';
+				JTF_color = '0000ff';
+				PL_color = '0000ff';
+				ZF_color = '0000ff';
+			}
+			else if(now_click == 'YCF')
+			{
+				RF_color = '0000ff';
+				YCF_color = 'ff0000';
+				LEF_color = '0000ff';
+				CFT_color = '0000ff';
+				PCF_color = '0000ff';
+				CTJG_color = '0000ff';
+				JTF_color = '0000ff';
+				PL_color = '0000ff';
+				ZF_color = '0000ff';
+			}
+			else if(now_click == 'LEF')
+			{
+				RF_color = '0000ff';
+				YCF_color = '0000ff';
+				LEF_color = 'ff0000';
+				CFT_color = '0000ff';
+				PCF_color = '0000ff';
+				CTJG_color = '0000ff';
+				PL_color = '0000ff';
+				ZF_color = '0000ff';
+			}
+			else if(now_click == 'CFT')
+			{
+				RF_color = '0000ff';
+				YCF_color = '0000ff';
+				LEF_color = '0000ff';
+				CFT_color = 'ff0000';
+				PCF_color = '0000ff';
+				CTJG_color = '0000ff';
+				JTF_color = '0000ff';
+				PL_color = '0000ff';
+				ZF_color = '0000ff';
+			}
+			else if(now_click == 'PCF')
+			{
+				RF_color = '0000ff';
+				YCF_color = '0000ff';
+				LEF_color = '0000ff';
+				CFT_color = '0000ff';
+				PCF_color = 'ff0000';
+				CTJG_color = '0000ff';
+				JTF_color = '0000ff';
+				PL_color = '0000ff';
+				ZF_color = '0000ff';
+			}
+			else if(now_click == 'CTJG')
+			{
+				RF_color = '0000ff';
+				YCF_color = '0000ff';
+				LEF_color = '0000ff';
+				CFT_color = '0000ff';
+				PCF_color = '0000ff';
+				CTJG_color = 'ff0000';
+				JTF_color = '0000ff';
+				PL_color = '0000ff';
+				ZF_color = '0000ff';
+			}
+			else if(now_click == 'JTF')
+			{
+				RF_color = '0000ff';
+				YCF_color = '0000ff';
+				LEF_color = '0000ff';
+				CFT_color = '0000ff';
+				PCF_color = '0000ff';
+				CTJG_color = '0000ff';
+				JTF_color = 'ff0000';
+				PL_color = '0000ff';
+				ZF_color = '0000ff';
+			}
+			else if(now_click == 'PL')
+			{
+				RF_color = '0000ff';
+				YCF_color = '0000ff';
+				LEF_color = '0000ff';
+				CFT_color = '0000ff';
+				PCF_color = '0000ff';
+				CTJG_color = '0000ff';
+				JTF_color = '0000ff';
+				PL_color = 'ff0000';
+				ZF_color = '0000ff';
+			}
+			else if(now_click == 'ZF')
+			{
+				RF_color = '0000ff';
+				YCF_color = '0000ff';
+				LEF_color = '0000ff';
+				CFT_color = '0000ff';
+				PCF_color = '0000ff';
+				CTJG_color = '0000ff';
+				JTF_color = '0000ff';
+				PL_color = '0000ff';
+				ZF_color = 'ff0000';
+			}
+			
+				
+			click_buf = now_click;
+				
+				//default:
+					
+			
+		}
+		
+		
+		/* function init_click()
+		 {
+			for(var x = 0 ; x<list_buf.length ; x++)
+			{
+				var classlist = document.getElementsByClassName(list_buf[x]);
+				for (var y = 0 ; y < classlist.length ; y++)
+				{
+					classlist[y].style.color="#337ab7";
+				}
+			}
+			while (list_buf.length > 0) {
+            list_buf.pop();
+			}
+		 }*/
+		 
+
+		 
+		
+    </script>
+	
+	<!--<style>
+.index-list {
+    margin: 0.4cm 0.2cm 0.1cm 0.8cm;
+}
+<div class="hotspot" style=" height: 60px; width: 30px;"></div>
+<svg>
+     <rect id="A"  fill="yellow"  width="30" height="50" onClick="sendMsg('HG')" />
+  </svg>
+</style>--> 
+	
+</head>
+<body>
+												
+				<div id="pic_content" >
+					
+					<div  align="center" >
+					
+						<img 
+						src="../img/ch5/ch5-23_24.png"
+						border="0" usemap="#map_ch5-23_24" class="mappic" 
+						/>
+						
+						<map name="map_ch5-23_24" id='map_ch5-23_24'>
+							<area title="乳栿" shape="rect" coords="250,110,290,170" href="#" onClick="ch_pic_controller.sendMsg('RF')" class="RF"  alt="RF_area"/>
+							<area title="平樑" shape="rect" coords="30,110,70,170" href="#" onClick="ch_pic_controller.sendMsg('PL')" class="PL"  alt="PL_area"/>
+							<area title="草栿" shape="rect" coords="385,360,425,420" href="#" onClick="ch_pic_controller.sendMsg('ZF')" class="ZF"  alt="ZF_area"/>
+						</map>
+						
+						
+					</div>
+					<div  align="center" >
+					
+						<img 
+						src="../img/ch5/ch5-25_26.png"
+						border="0" usemap="#map_ch5-25_26" class="mappic" 
+						/>
+						
+						<map name="map_ch5-25_26" id='map_ch5-25_26'>
+							
+						</map>
+						
+						
+					</div>
+					
+					<div  align="center" >
+					
+						<img 
+						src="../img/ch5/ch5-27_28.png"
+						border="0" usemap="#map_ch5-27_28" class="mappic" 
+						/>
+						
+						<map name="map_ch5-27_28" id='map_ch5-27_28'>
+							<area title="壓槽枋" shape="rect" coords="730,300,770,380" href="#" onClick="ch_pic_controller.sendMsg('YCF')" class="YCF"  alt="YCF_area"/>
+							<area title="柱頭枋" shape="rect" coords="730,440,770,540" href="#" onClick="ch_pic_controller.sendMsg('JTF')" class="JTF"  alt="JTF_area"/>
+							<area title="橑檐枋" shape="rect" coords="690,220,730,300" href="#" onClick="ch_pic_controller.sendMsg('LEF')" class="LEF"  alt="LEF_area"/>
+							<area title="橑檐枋" shape="rect" coords="600,490,640,580" href="#" onClick="ch_pic_controller.sendMsg('LEF')" class="LEF"  alt="LEF_area"/>
+							<area title="襯方頭" shape="rect" coords="470,50,510,130" href="#" onClick="ch_pic_controller.sendMsg('CFT')" class="CFT"  alt="CFT_area"/>
+							<area title="平棊枋" shape="rect" coords="420,200,460,280" href="#" onClick="ch_pic_controller.sendMsg('PCF')" class="PCF"  alt="PCF_area"/>
+							<area title="平棊枋" shape="rect" coords="240,50,280,140" href="#" onClick="ch_pic_controller.sendMsg('PCF')" class="PCF"  alt="PCF_area"/>
+							<area title="騎槽檐栱" shape="rect" coords="420,440,460,500" href="#" onClick="ch_pic_controller.sendMsg('CTJG')" class="CTJG"  alt="CTJG_area"/>
+						</map>
+						
+						
+					</div>
+					
+						
+					</div>
+					
+					
+		
+				</div>
+	
+	
+
+
+</body>
+<script>
+</script>
+</html>

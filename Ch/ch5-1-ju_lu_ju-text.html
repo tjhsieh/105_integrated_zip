@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+ <title>營造法式 list</title>
+    <!-- CSS -->
+    <link href="../Content/Tools/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/Tools/prettify.css" rel="stylesheet" />
+    <link href="../Content/main.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="../Scripts/Tree/dhtmlxtree.css"/>
+	
+	<!-- Tool -->
+    <script src="../Scripts/Tools/JQuery/jquery-2.1.3.min.js"></script>
+    <script src="../Scripts/Tools/jquery.hotkeys.js"></script>
+    <script src="../Scripts/Tools/bootstrap/bootstrap.min.js"></script>
+    <script src="../Scripts/Tools/bootstrap-filestyle/bootstrap-filestyle.min.js"></script>
+    <script src="../Scripts/Tools/prettify.js"></script>
+    <script src="../Scripts/Tools/FileSaver/FileSaver.min.js"></script>
+	
+	<!-- three.js -->
+    <script src="../Scripts/Tools/three.js/three.min.js"></script>
+    <script src="../Scripts/Tools/three.js/js/controls/OrbitControls.js"></script>
+    <script src="../Scripts/Tools/three.js/js/exporters/STLBinaryExporter.js"></script>
+    <script src="../Scripts/Tools/three.js/js/exporters/STLExporter.js"></script>
+    <script src="../Scripts/Tools/three.js/js/libs/stats.min.js"></script>
+    <script src="../Scripts/Tools/three.js/js/loaders/ColladaLoader.js"></script>
+	
+	<!-- 我自己的內容 -->
+	<script src="../Scripts/View/ui.js"></script>
+	<script src="../Scripts/controller.js"></script>
+	<script src="../Scripts/View/sketchpad.js"></script>
+	<script src="../Scripts/Model/shape.js"></script>
+	<script src="../Scripts/ch_text_controller.js"></script>
+	<!-- Tree -->
+	<script src="../Scripts/Tree/dhtmlxtree.js"></script>
+	
+	
+	<script>
+
+        //var shape_draw = false;  //僅支援單栱,重栱,四鋪作(未加昂)
+        //var scale = 2.55;
+
+        //var shape_grammar_controller;
+		var ch_text_controller;
+
+        $(document).ready(function () {
+		
+		ch_text_controller = new ch_text_controller;
+		ch_text_controller.detector();
+
+		
+            //shape_grammar_controller = new controller();
+        });
+		
+
+    </script>
+	
+	<!--<style>
+.index-list {
+    margin: 0.4cm 0.2cm 0.1cm 0.8cm;
+}
+
+</style>--> 
+	
+</head>
+<body>
+	
+								
+			<div class="tb_container" >									
+				<div class="part_container">
+					<h1><span class="mw-headline" id="ch5">侏儒柱</span></h1>
+					<div class="index-list">
+					
+					<p>
+
+						○侏儒柱（其名有六：一曰棁，二曰侏儒柱，三曰浮柱，四曰棳，五曰上楹，六曰<a href="#" onClick="ch_text_controller.sendMsg('SJ')" class="SJ">蜀柱</a>。斜柱附其名有五：一曰斜柱，二曰梧，三曰迕，四曰枝摚，五曰義手。）</p>
+
+					<p>造<a href="#" onClick="ch_text_controller.sendMsg('SJ')" class="SJ">蜀柱</a>之製：於平梁上，長隨舉勢高下，殿閣徑一材半，餘屋量栿厚加減。兩麵各順平栿隨舉勢斜安義手。</p>
+
+					<p>造義手之製：若殿閣廣一材一契，餘屋廣隨材或加二分至三分，厚取廣三分之一。（蜀柱下安合遝者，長不過梁之半。）</p>
+
+					<p>凡中下平槫縫，並於梁首向裹斜安托腳，其廣隨材，厚三分之一，從上梁角過，抱槫出卯，以托向上槫縫。</p>
+					
+					<p>凡屋如徹上明造，即於蜀柱之上安枓，（若義手上角內安栱兩麵出耍頭者，謂之丁華抹頦栱。）枓上安隨間襻間，或一材，或兩材。襻間廣厚並如材，長隨間廣，出半栱在外，半栱連身對隱。若兩材造，即每間各用一材，隔間上下相閃，令慢栱在上，瓜子栱在下。若一材造，隻用令栱，隔間一材。如屋內遍用襻間，一材或兩材，並與梁頭相交。（或於兩際隨槫作遝頭，以乘替木。）</p>
+					
+					<p>凡襻間，如在平棋上者，謂之草襻間，並用全條方。</p>
+					<p>凡<a href="#" onClick="ch_text_controller.sendMsg('SJ')" class="SJ">蜀柱</a>，量所用長短，於中心安順脊串。廣厚如材，或加三分至四分，長隨間，隔間用之。（若梁上用矮柱者，徑隨相對之柱。其長隨舉勢高下。）</p>
+					<p>凡順栿串，並出柱作丁頭栱，其廣一足材。或不及，即作遝頭，厚如材，在牽梁或乳栿下。</p>
+					
+												
+					
+					</div>
+		
+				</div>
+			</div>
+	
+	
+
+
+</body>
+<script>
+</script>
+</html>

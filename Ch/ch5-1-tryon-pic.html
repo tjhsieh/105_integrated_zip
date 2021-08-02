@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+ <title>營造法式 list</title>
+    <!-- CSS -->
+    <link href="../Content/Tools/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/Tools/prettify.css" rel="stylesheet" />
+    <link href="../Content/main.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="../Scripts/Tree/dhtmlxtree.css"/>
+	
+	<!-- Tool -->
+    <script src="../Scripts/Tools/JQuery/jquery-2.1.3.min.js"></script>
+	<script src="../Scripts/Tools/JQuery/jquery.maphilight.js"></script>
+    <script src="../Scripts/Tools/jquery.hotkeys.js"></script>
+    <script src="../Scripts/Tools/bootstrap/bootstrap.min.js"></script>
+    <script src="../Scripts/Tools/bootstrap-filestyle/bootstrap-filestyle.min.js"></script>
+    <script src="../Scripts/Tools/prettify.js"></script>
+    <script src="../Scripts/Tools/FileSaver/FileSaver.min.js"></script>
+	
+	<!-- three.js -->
+    <script src="../Scripts/Tools/three.js/three.min.js"></script>
+    <script src="../Scripts/Tools/three.js/js/controls/OrbitControls.js"></script>
+    <script src="../Scripts/Tools/three.js/js/exporters/STLBinaryExporter.js"></script>
+    <script src="../Scripts/Tools/three.js/js/exporters/STLExporter.js"></script>
+    <script src="../Scripts/Tools/three.js/js/libs/stats.min.js"></script>
+    <script src="../Scripts/Tools/three.js/js/loaders/ColladaLoader.js"></script>
+	
+	<!-- 我自己的內容 -->
+	<script src="../Scripts/View/ui.js"></script>
+	<script src="../Scripts/controller.js"></script>
+	<script src="../Scripts/View/sketchpad.js"></script>
+	<script src="../Scripts/Model/shape.js"></script>
+	<script src="../Scripts/ch_pic_controller.js"></script>
+	<!-- Tree -->
+	<script src="../Scripts/Tree/dhtmlxtree.js"></script>
+	
+
+	<script>
+
+        //var shape_draw = false;  //僅支援單栱,重栱,四鋪作(未加昂)
+        //var scale = 2.55;
+
+        //var shape_grammar_controller;
+		
+		var ch_pic_controller;
+		var Tryon_color = '0000ff' ;
+		$(document).ready(function () {
+
+		/*	addEventListener("message", function (event) {           
+					if(event.data != event_data_buf)
+            {
+				event_data_buf = event.data;
+				set_click(event.data); 
+			} 
+			}, false);
+		*/
+			ch_pic_controller = new ch_pic_controller;
+			ch_pic_controller.detector();
+			jQuery(function() {
+				$('.mappic').maphilight({alwaysOn: true, fill: false, strokeColor: '0000ff', fillColor: 'ffff00'});
+				
+/*area hover event*/
+				
+				$(".Tryon").hover(function(){
+				//console.log("hover test:" + obj.name);
+				var data = {};
+				data.fill = true;
+				data.strokeColor = Tryon_color;
+				$('area[alt="Tryon_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+					//console.log("hover test:" + $(this).name);
+					
+					}, function(){
+					var data = {};
+				data.fill = false;
+				data.strokeColor = Tryon_color;
+				$('area[alt="Tryon_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+				
+				
+				});
+				
+				
+				
+/*area click event*/
+
+				
+				$('.Tryon').click(function(e) {
+				
+				e.preventDefault();
+					var data = {};
+				after_click_color("Tryon");
+				data.strokeColor = 'ff0000';
+				$('area[alt="Tryon_area"]').data('maphilight', data).trigger('alwaysOn.maphilight');
+				  });
+				  
+			});
+			
+
+        });
+		
+		function after_click_color(now_click)
+		{
+			ch_pic_controller.init_color();
+			if(now_click == 'Tryon')
+			{
+				Tryon_color = 'ff0000';
+			}
+					
+			click_buf = now_click;
+		}
+		
+
+		 
+
+		 
+		
+    </script>
+	
+	<!--<style>
+.index-list {
+    margin: 0.4cm 0.2cm 0.1cm 0.8cm;
+}
+<div class="hotspot" style=" height: 60px; width: 30px;"></div>
+<svg>
+     <rect id="A"  fill="yellow"  width="30" height="50" onClick="sendMsg('HG')" />
+  </svg>
+</style>--> 
+	
+</head>
+<body>
+												
+				<div id="pic_content" >
+					
+					<div  align="center" >
+					
+						<img 
+						src="../img/ch5/ch5-38.png"
+						border="0" usemap="#map_ch5-38" class="mappic" 
+						/>
+						
+						<map name="map_ch5-38" id='map_ch5-38'>
+							<area title="椽" shape="rect" coords="420,100,460,130" href="#" onClick="ch_pic_controller.sendMsg('Tryon')" class="Tryon" alt="Tryon_area" />
+						</map>
+						
+						
+					</div>
+					
+					<div  align="center" >
+					
+						<img 
+						src="../img/ch5/ch5-39.png"
+						border="0" usemap="#map_ch5-39" class="mappic" 
+						/>
+						
+						<map name="map_ch5-39" id='map_ch5-39'>
+							
+						</map>
+						
+						
+					</div>
+					
+					
+					
+					
+						
+				</div>
+					
+					
+		
+	
+	
+
+
+</body>
+<script>
+</script>
+</html>

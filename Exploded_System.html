@@ -1,0 +1,215 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+ <title>Exploded View Dougong System</title>
+    <!-- CSS -->
+    <link href="Content/Tools/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/Tools/prettify.css" rel="stylesheet" />
+    <link href="Content/main.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="Scripts/Tree/dhtmlxtree.css"/>
+	
+	<!-- Tool -->
+    <script src="Scripts/Tools/JQuery/jquery-2.1.3.min.js"></script>
+	<script src="Scripts/Tools/JQuery/jquery.blockUI.js"></script>
+    <script src="Scripts/Tools/jquery.hotkeys.js"></script>
+    <script src="Scripts/Tools/bootstrap/bootstrap.min.js"></script>
+    <script src="Scripts/Tools/bootstrap-filestyle/bootstrap-filestyle.min.js"></script>
+    <script src="Scripts/Tools/prettify.js"></script>
+	<script src="Scripts/Tools/zip.js"></script>
+	<script src="Scripts/Tools/deflate.js"></script>
+	<script src="Scripts/Tools/inflate.js"></script>
+	
+	
+	<!-- three.js -->
+    <script src="Scripts/Tools/three.js/three.min.js"></script>
+    <script src="Scripts/Tools/three.js/js/controls/OrbitControls.js"></script>
+    <script src="Scripts/Tools/three.js/js/libs/stats.min.js"></script>
+    <script src="Scripts/Tools/three.js/js/loaders/ColladaLoader.js"></script>
+	<script src="Scripts/Tools/three.js/dat.gui.min.js"></script>
+	
+	<!-- 我自己的內容 -->
+	<script src="Scripts/View/ui.js"></script>
+	<script src="Scripts/controller.js"></script>
+	<script src="Scripts/View/sketchpad.js"></script>
+	<script src="Scripts/Model/shape.js"></script>
+	
+	<!-- Tree -->
+	<script src="Scripts/Tree/dhtmlxtree.js"></script>
+	
+	
+	<script>
+
+        var shape_draw = false;  //僅支援單栱,重栱,四鋪作(未加昂)
+        var scale = 2.55;
+
+        var shape_grammar_controller;
+		
+        $(document).ready(function () {
+
+            shape_grammar_controller = new controller();
+	
+		addEventListener("message", function (event) {           
+                shape_grammar_controller.detector(event.data); 
+        }, false);
+		
+        });
+
+		
+    </script>
+	
+</head>
+<body >
+	<!-- 上方工具列 -->   
+    <div class="navbar navbar-default toolbar" role="navigation">
+        <ul class="nav navbar-nav">
+		 <!-- 檔案 -->
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    檔案
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#" onclick="shape_grammar_controller.load_XML()">載入XML</a>
+                    </li>
+                    <li class="divider"></li>
+                    
+                    <li>
+                        <a href="#" onclick="shape_grammar_controller.close()">退出</a>
+                    </li>
+                </ul>
+            </li>
+			
+		<!-- 檢視 -->
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    檢視
+                </a>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#" onclick="shape_grammar_controller.set_aixs('aixs_x')">X軸</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="shape_grammar_controller.set_aixs('aixs_y')">Y軸</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="shape_grammar_controller.set_aixs('aixs_z')">Z軸</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li>
+                        <a href="#" onclick="shape_grammar_controller.set_ground()">地板</a>
+                    </li>
+                    <li>
+                        <a href="#" onclick="shape_grammar_controller.set_ground_grid()">地板格線</a>
+                    </li>
+					<!--<li>
+                        <a href="#" onclick="shape_grammar_controller.addcutting_box()">剖面</a>
+                    </li>-->
+                    
+                </ul>
+            </li>
+			
+		</ul>
+	</div>
+	
+	<!-- 主畫面 -->
+    <div class="editor row">
+	
+	<!-- 主繪圖介面 -->
+        <div class="col-md-9" id="canvas" >
+			
+
+		
+        </div>
+		<p><span id="obj_text"></span></p>
+		<!-- 右方控制面板 -->
+        <div class="col-md-3">
+
+            <!-- 控制面板項目 -->
+            <ul id="toolTab" class="nav nav-tabs" onclick="shape_grammar_controller.init_click()">
+                <li>
+                    <a href="#tab_treemenu" data-toggle="tab">
+                        Tree_menu
+                    </a>
+                </li>
+                <li>
+                    <a href="#tab_xml" data-toggle="tab">
+                        XML
+                    </a>
+                </li>
+            </ul>
+
+            <!-- 控制面板內容 -->
+            <div id="toolTabContent" class="tab-content" >
+			
+				<!-- 範例 -->
+                <div class="tab-pane fade in active" id="tab_treemenu">
+					<div id="grammar_chooser">
+                    
+						<div id="treemenu_load">
+						</div>
+					
+					</div>
+					  <!-- Trigger the modal with a button -->
+					<div id="exploded_button">
+						<button type="button" class="btn btn-primary btn-block" data-toggle="modal"  data-target="#myModal">Exploded model</button>
+					</div>	
+
+					  <!-- Modal -->
+					  <div class="modal fade" id="myModal" role="dialog">
+						<div class="modal-dialog">
+						
+						  <!-- Modal content-->
+						  <div class="modal-content">
+							<div class="modal-header">
+							  <button type="button" class="close" data-dismiss="modal">&times;</button>
+							  <h4 class="modal-title">目標模型分解視圖</h4>
+							</div>
+							<div class="modal-body">
+							  Notice:目前只適用單一葉節點!
+							  
+							  <form  method="post">
+					輸入分解囊括範圍: <input type="number" name="distance" id="input_area" value="2">
+					輸入分解距離: <input type="number" name="distance" id="input_exploded_dis" value="1">
+					　
+					</form>
+							</div>
+							<div class="modal-footer">
+							  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							  <button type="button" class="btn btn-default" data-dismiss="modal" onclick="shape_grammar_controller.view_shape()">Submit</button>
+							</div>
+						  </div>
+						  
+						</div>
+					  </div>
+
+                </div>
+				
+			
+
+
+                <!-- XML分頁 -->
+                <div class="tab-pane fade item-list" id="tab_xml">
+                    <div style="padding: 10px 5px 10px;">
+                        <input type="file" id="XML_file" class="filestyle" data-iconname="glyphicon-inbox" accept="text/*" onchange="shape_grammar_controller.get_XML(event)">
+                    </div>
+
+                    <div id="XML_viewer">
+                        <pre class="prettyprint lang-xml"></pre>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+	</div>	
+	
+	
+
+
+</body>
+<script>
+</script>
+</html>

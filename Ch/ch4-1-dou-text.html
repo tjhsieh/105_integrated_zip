@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+ <title>營造法式 list</title>
+    <!-- CSS -->
+    <link href="../Content/Tools/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/Tools/prettify.css" rel="stylesheet" />
+    <link href="../Content/main.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="../Scripts/Tree/dhtmlxtree.css"/>
+	
+	<!-- Tool -->
+    <script src="../Scripts/Tools/JQuery/jquery-2.1.3.min.js"></script>
+    <script src="../Scripts/Tools/jquery.hotkeys.js"></script>
+    <script src="../Scripts/Tools/bootstrap/bootstrap.min.js"></script>
+    <script src="../Scripts/Tools/bootstrap-filestyle/bootstrap-filestyle.min.js"></script>
+    <script src="../Scripts/Tools/prettify.js"></script>
+    <script src="../Scripts/Tools/FileSaver/FileSaver.min.js"></script>
+	
+	<!-- three.js -->
+    <script src="../Scripts/Tools/three.js/three.min.js"></script>
+    <script src="../Scripts/Tools/three.js/js/controls/OrbitControls.js"></script>
+    <script src="../Scripts/Tools/three.js/js/exporters/STLBinaryExporter.js"></script>
+    <script src="../Scripts/Tools/three.js/js/exporters/STLExporter.js"></script>
+    <script src="../Scripts/Tools/three.js/js/libs/stats.min.js"></script>
+    <script src="../Scripts/Tools/three.js/js/loaders/ColladaLoader.js"></script>
+	
+	<!-- 我自己的內容 -->
+	<script src="../Scripts/View/ui.js"></script>
+	<script src="../Scripts/controller.js"></script>
+	<script src="../Scripts/View/sketchpad.js"></script>
+	<script src="../Scripts/Model/shape.js"></script>
+	<script src="../Scripts/ch_text_controller.js"></script>
+	<!-- Tree -->
+	<script src="../Scripts/Tree/dhtmlxtree.js"></script>
+	
+	
+	<script>
+
+        //var shape_draw = false;  //僅支援單栱,重栱,四鋪作(未加昂)
+        //var scale = 2.55;
+
+        //var shape_grammar_controller;
+
+        var ch_text_controller;
+
+        $(document).ready(function () {
+		//console.log("window test!:" +window.opener.name);
+		
+			ch_text_controller = new ch_text_controller;
+			ch_text_controller.detector();
+			});
+		 
+
+		 
+		
+    </script>
+	
+	<!--<style>
+.index-list {
+    margin: 0.4cm 0.2cm 0.1cm 0.8cm;
+}
+
+</style>--> 
+	
+</head>
+<body>
+	
+								
+			<div class="tb_container" >									
+				<div class="part_container">
+					<h1><span class="mw-headline" id="ch1">枓</span></h1>
+					<div class="index-list">
+					
+					<p>
+
+						○枓（其名有五：一曰楶，二曰栭。三曰櫨，四曰遝，五曰枓。）造枓之製有四：</p>
+
+					<p>一曰<a href="#" onClick="ch_text_controller.sendMsg('RD')" class="RD">櫨枓</a>：施之於柱頭，其長與廣皆三十二分。若施於角柱之上者，方三十六分，（如造圜枓，則麵徑三十六分，底徑二十八分。）高二十分。上八分為耳，中四分為平，下八分為欹。（今俗謂之溪者非。）開口廣十分，深八分，（出跳則十字開口，四耳。如不出跳，則順身開口，兩耳。）底四麵各殺四分，欹<幽頁>一分。（如柱頭用圜枓，即補間鋪作用訛角枓。）</p>
+
+					<p>二曰<a href="#" onClick="ch_text_controller.sendMsg('JHD')" class="JHD">交互枓</a>：（亦謂之長開枓。）施之於華栱出跳之上，（十字開口，四耳。如施之於替木下者，順身開口，兩耳。）其長十八分，廣十六分。（若屋內梁栿下用者，其長二十四分，廣十八分，厚十二分，謂之交栿枓，於梁栿頭橫用之。如梁栿項歸一材之厚者，隻用交互枓。如柱大小不等，其枓量柱材隨宜加減。）</p>
+
+					<p>三曰<a href="#" onClick="ch_text_controller.sendMsg('QXD')" class="QXD">齊心枓</a>：（亦謂之華心枓。）施之於栱心之上，（順身開口，兩耳。若施之於平坐出頭木之下，則十字開口，四耳。）其長與廣皆十六分。（如施由昂及內外轉角出跳之上，則不用耳，謂之平盤枓，其高六分。）</p>
+
+					<p>四曰<a href="#" onClick="ch_text_controller.sendMsg('SD')" class="SD">散枓</a>：（亦謂之小枓，或謂之順桁枓，又謂之騎互枓。）施之於栱兩頭，（橫開口，兩耳，以廣為麵。如鋪作偷心，則施之於<a href="#" onClick="ch_text_controller.sendMsg('HG')" class="HG">華栱</a>出跳之上。）其長十六分，廣十四分。</p>
+
+					<p>凡<a href="#" onClick="ch_text_controller.sendMsg('JHD')" class="JHD">交互枓</a>、<a href="#" onClick="ch_text_controller.sendMsg('QXD')" class="QXD">齊心枓</a>、<a href="#" onClick="ch_text_controller.sendMsg('SD')" class="SD">散枓</a>皆高十分，上四分為耳，中二分為平，下四。分為欹，開口皆廣十分，深四分，底四百各殺二分，欹<幽頁>半分。</p>
+
+					<p>凡四耳枓，於順跳口內前後裹壁各留隔口包耳，高二分，厚一分半，<a href="#" onClick="ch_text_controller.sendMsg('RD')" class="RD">櫨枓</a>則倍之。（角內<a href="#" onClick="ch_text_controller.sendMsg('RD')" class="RD">櫨枓</a>於出角栱口內留隔口包耳，其高隨耳，抹角內陰入半分。）</p>
+					
+					
+						
+					
+					</div>
+		
+				</div>
+			</div>
+	
+	
+
+
+</body>
+<script>
+</script>
+</html>

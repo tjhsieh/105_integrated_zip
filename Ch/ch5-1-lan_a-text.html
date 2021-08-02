@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+ <title>營造法式 list</title>
+    <!-- CSS -->
+    <link href="../Content/Tools/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/Tools/prettify.css" rel="stylesheet" />
+    <link href="../Content/main.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="../Scripts/Tree/dhtmlxtree.css"/>
+	
+	<!-- Tool -->
+    <script src="../Scripts/Tools/JQuery/jquery-2.1.3.min.js"></script>
+    <script src="../Scripts/Tools/jquery.hotkeys.js"></script>
+    <script src="../Scripts/Tools/bootstrap/bootstrap.min.js"></script>
+    <script src="../Scripts/Tools/bootstrap-filestyle/bootstrap-filestyle.min.js"></script>
+    <script src="../Scripts/Tools/prettify.js"></script>
+    <script src="../Scripts/Tools/FileSaver/FileSaver.min.js"></script>
+	
+	<!-- three.js -->
+    <script src="../Scripts/Tools/three.js/three.min.js"></script>
+    <script src="../Scripts/Tools/three.js/js/controls/OrbitControls.js"></script>
+    <script src="../Scripts/Tools/three.js/js/exporters/STLBinaryExporter.js"></script>
+    <script src="../Scripts/Tools/three.js/js/exporters/STLExporter.js"></script>
+    <script src="../Scripts/Tools/three.js/js/libs/stats.min.js"></script>
+    <script src="../Scripts/Tools/three.js/js/loaders/ColladaLoader.js"></script>
+	
+	<!-- 我自己的內容 -->
+	<script src="../Scripts/View/ui.js"></script>
+	<script src="../Scripts/controller.js"></script>
+	<script src="../Scripts/View/sketchpad.js"></script>
+	<script src="../Scripts/Model/shape.js"></script>
+	<script src="../Scripts/ch_text_controller.js"></script>
+	<!-- Tree -->
+	<script src="../Scripts/Tree/dhtmlxtree.js"></script>
+	
+	
+	<script>
+
+        //var shape_draw = false;  //僅支援單栱,重栱,四鋪作(未加昂)
+        //var scale = 2.55;
+
+        //var shape_grammar_controller;
+		var ch_text_controller;
+
+        $(document).ready(function () {
+		
+		ch_text_controller = new ch_text_controller;
+		ch_text_controller.detector();
+
+		
+            //shape_grammar_controller = new controller();
+        });
+		
+
+    </script>
+	
+	<!--<style>
+.index-list {
+    margin: 0.4cm 0.2cm 0.1cm 0.8cm;
+}
+
+</style>--> 
+	
+</head>
+<body>
+	
+								
+			<div class="tb_container" >									
+				<div class="part_container">
+					<h1><span class="mw-headline" id="ch5">闌額</span></h1>
+					<div class="index-list">
+					
+					<p>
+
+						造<a href="#" onClick="ch_text_controller.sendMsg('lan_a')" class="lan_a">闌額</a>之製：廣加材一倍，厚減廣三分之一，長隨間廣，兩頭至柱心，入柱卯減厚之半，兩肩用中以四瓣卷殺，每瓣長八分。如不用補間鋪作，即厚取廣之半。
+
+凡簷額兩頭並出柱口，其廣兩材一契至三材。如殿閣，即廣三材一契，或加至三材三契。簷額下綽幕方廣減簷額三分之一，出柱長至補間，相對作遝頭或三瓣頭。（如角梁。）</p>
+
+					<p>凡<a href="#" onClick="ch_text_controller.sendMsg('you_a')" class="you_a">由額</a>施之於<a href="#" onClick="ch_text_controller.sendMsg('lan_a')" class="lan_a">闌額</a>之下，廣減<a href="#" onClick="ch_text_controller.sendMsg('lan_a')" class="lan_a">闌額</a>二分。至三分。（出卯卷殺並同<a href="#" onClick="ch_text_controller.sendMsg('lan_a')" class="lan_a">闌額</a>法。）如有副階，即於峻腳椽下安之；如無副階，即隨宜加減，令高下得中。（若副階額下，即不須用。）</p>
+
+					<p>凡<a href="#" onClick="ch_text_controller.sendMsg('wu_na_a')" class="wu_na_a">屋內額</a>廣一材三分至一材一契，厚取廣三分之一，長隨間廣，兩頭至柱心或駝峰心。</p>
+
+					<p>凡<a href="#" onClick="ch_text_controller.sendMsg('di_fu')" class="di_fu">地栿</a>廣加材二分至三分，厚取廣三分之二，至角出柱一材。（上角或卷殺作梁切幾頭。）</p>
+												
+					
+					</div>
+		
+				</div>
+			</div>
+	
+	
+
+
+</body>
+<script>
+</script>
+</html>

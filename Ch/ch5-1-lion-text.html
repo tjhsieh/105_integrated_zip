@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+ <title>營造法式 list</title>
+    <!-- CSS -->
+    <link href="../Content/Tools/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/Tools/prettify.css" rel="stylesheet" />
+    <link href="../Content/main.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="../Scripts/Tree/dhtmlxtree.css"/>
+	
+	<!-- Tool -->
+    <script src="../Scripts/Tools/JQuery/jquery-2.1.3.min.js"></script>
+    <script src="../Scripts/Tools/jquery.hotkeys.js"></script>
+    <script src="../Scripts/Tools/bootstrap/bootstrap.min.js"></script>
+    <script src="../Scripts/Tools/bootstrap-filestyle/bootstrap-filestyle.min.js"></script>
+    <script src="../Scripts/Tools/prettify.js"></script>
+    <script src="../Scripts/Tools/FileSaver/FileSaver.min.js"></script>
+	
+	<!-- three.js -->
+    <script src="../Scripts/Tools/three.js/three.min.js"></script>
+    <script src="../Scripts/Tools/three.js/js/controls/OrbitControls.js"></script>
+    <script src="../Scripts/Tools/three.js/js/exporters/STLBinaryExporter.js"></script>
+    <script src="../Scripts/Tools/three.js/js/exporters/STLExporter.js"></script>
+    <script src="../Scripts/Tools/three.js/js/libs/stats.min.js"></script>
+    <script src="../Scripts/Tools/three.js/js/loaders/ColladaLoader.js"></script>
+	
+	<!-- 我自己的內容 -->
+	<script src="../Scripts/View/ui.js"></script>
+	<script src="../Scripts/controller.js"></script>
+	<script src="../Scripts/View/sketchpad.js"></script>
+	<script src="../Scripts/Model/shape.js"></script>
+	<script src="../Scripts/ch_text_controller.js"></script>
+	<!-- Tree -->
+	<script src="../Scripts/Tree/dhtmlxtree.js"></script>
+	
+	
+	<script>
+
+        //var shape_draw = false;  //僅支援單栱,重栱,四鋪作(未加昂)
+        //var scale = 2.55;
+
+        //var shape_grammar_controller;
+		var ch_text_controller;
+
+        $(document).ready(function () {
+		
+		ch_text_controller = new ch_text_controller;
+		ch_text_controller.detector();
+
+		
+            //shape_grammar_controller = new controller();
+        });
+		
+
+    </script>
+	
+	<!--<style>
+.index-list {
+    margin: 0.4cm 0.2cm 0.1cm 0.8cm;
+}
+
+</style>--> 
+	
+</head>
+<body>
+	
+								
+			<div class="tb_container" >									
+				<div class="part_container">
+					<h1><span class="mw-headline" id="ch5">梁</span></h1>
+					<div class="index-list">
+					
+					<p>
+
+						舉折○梁（其名有三：一曰梁，二曰杗廇，三曰欐。）造梁之製有五：</p>
+
+					<p>一曰簷栿：如四椽及五椽栿，若四鋪作以上至八鋪作並廣兩材契，<a href="#" onClick="ch_text_controller.sendMsg('ZF')" class="ZF">草栿</a>廣三材；如六椽至八椽以上栿，若四鋪作至八鋪作廣四材，<a href="#" onClick="ch_text_controller.sendMsg('ZF')" class="ZF">草栿</a>同。</p>
+
+					<p>二曰一曰<a href="#" onClick="ch_text_controller.sendMsg('RF')" class="RF">乳栿</a>：（若封大梁用者，與大梁廣同。）三椽栿：若四鋪作、五鋪作廣兩材一契，草栿廣兩材；六鋪作以上廣兩材兩契<a href="#" onClick="ch_text_controller.sendMsg('ZF')" class="ZF">草栿</a>同。</p>
+
+					<p>三曰劄牽：若四鋪作至八鋪作，出跳廣兩材；如不出跳，並不過一材一契。（草牽梁準此。）</p>
+
+					<p>四曰<a href="#" onClick="ch_text_controller.sendMsg('PL')" class="PL">平梁</a>：若四鋪作、五鋪作，廣加材一倍；六鋪作以上廣兩材一契。</p>
+
+					<p>五曰廳堂梁栿：五椽、四椽廣不過兩材一契，三椽廣兩材。餘屋量椽數準此法加減。</p>
+
+					<p>凡梁之大小，各隨其廣分為三分，以二分為厚。（凡方木小，須繳貼令大。如方木大，不得裁減，即於廣厚加之。如疑槫及替木，即於梁上角開抱槫口。若直梁狹，即兩麵安槫栿版；如月梁狹，即上加繳背，下貼兩頰，不得刻剜梁麵。）</p>
+					
+					<p>造月梁之製：明栿其廣四十二分。（如徹上明造，其<a href="#" onClick="ch_text_controller.sendMsg('RF')" class="RF">乳栿</a>、三椽栿各廣四十二分，四椽栿廣五十分，五椽栿廣五十五分，六椽栿以上其廣並至六十分止。）梁首（謂出跳者。）不以大小，從下高二十一分，其上餘材，自枓裹平之上隨其高勻分作六分，其上以六瓣卷殺，每瓣長十分。其梁下當中<幽頁>六分：自枓心下量三十八分為斜項，（如下兩跳者長六十八分。）斜項外其下起<幽頁>，以六瓣卷殺，每瓣長十分，第六瓣盡處下<幽頁>五分。（去三分，留二分作琴麵。自第六瓣盡處漸起，至心又加高一分，令<幽頁>勢圜和。）梁尾（謂入柱者。）上背下<幽頁>，皆以五瓣卷殺。餘並同梁首之製。</p>
+					
+					<p>梁底麵厚二十五分。其項（入枓口處。）厚十分，枓口外兩肩各以四瓣卷殺，每瓣長十分。</p>
+					
+					<p>若平梁，四椽、六椽上用者，其廣三十五分；如八椽至十椽上用者，其廣四十二分，不以大小，從下高二十五分，上背下<幽頁>皆以四瓣卷殺。（兩頭並同。）其下第四瓣盡處<幽頁>四分。（去二分，留一分，作琴麵，自第四瓣盡處漸起至心又加高一分。）餘並同月梁之製。</p>
+					
+					<p>若劄牽，其廣三十五分。牽首不以大小，從下高一十五分，（上至枓底。）
+
+						上以六瓣卷殺，每瓣長八分。（下同。）牽尾上以五瓣，其下<幽頁>前、後各以三瓣。（斜項同月梁法。<幽頁>內去留同平梁法。）
+
+						凡屋內徹上明造者，梁頭相疊處須隨舉勢高下用駝峰。其駝峰長加高一倍，厚一材，枓下兩肩或作入瓣，或作出瓣，或圜訛兩肩、兩頭卷尖。梁頭安替木處並作隱枓，兩頭造耍頭或切幾頭，（切幾頭刻梁上角作一入瓣。）與令栱或襻間相交。凡屋內若施平棋，（平闇亦同。）在大梁之上。平棋之上又施<a href="#" onClick="ch_text_controller.sendMsg('ZF')" class="ZF">草栿</a>，<a href="#" onClick="ch_text_controller.sendMsg('RF')" class="RF">乳栿</a>之上亦施<a href="#" onClick="ch_text_controller.sendMsg('ZF')" class="ZF">草栿</a>，並在<a href="#" onClick="ch_text_controller.sendMsg('YCF')" class="YCF">壓槽方</a>之止。（壓槽方在<a href="#" onClick="ch_text_controller.sendMsg('JTF')" class="JTF">柱頭方</a>之上。）其<a href="#" onClick="ch_text_controller.sendMsg('ZF')" class="ZF">草栿</a>長同下梁，直至<a href="#" onClick="ch_text_controller.sendMsg('LEF')" class="LEF">橑簷方</a>止。若在兩麵，則安丁栿。丁栿之上別安抹角栿，與<a href="#" onClick="ch_text_controller.sendMsg('ZF')" class="ZF">草栿</a>相交。
+
+						凡角梁下又施焉襯角栿，在明梁之上，外至<a href="#" onClick="ch_text_controller.sendMsg('LEF')" class="LEF">橑簷方</a>，內至角後栿項，長以兩椽材斜長加之。
+
+						凡<a href="#" onClick="ch_text_controller.sendMsg('CFT')" class="CFT">襯方頭</a>施之於梁背耍頭之上，其廣厚同材，前至<a href="#" onClick="ch_text_controller.sendMsg('LEF')" class="LEF">橑簷方</a>，後至昂背或<a href="#" onClick="ch_text_controller.sendMsg('PCF')" class="PCF">平棋方</a>。（如無鋪作，即至托腳木止。）若<a href="#" onClick="ch_text_controller.sendMsg('CTJG')" class="CTJG">騎槽</a>，即前後各隨跳，與方、栱相交，開子蔭以壓枓上。
+
+						凡平棋之上須隨槫栿用方木及矮柱、敦忝，隨宜枝摚固濟，並在<a href="#" onClick="ch_text_controller.sendMsg('ZF')" class="ZF">草栿</a>之上。（凡明梁隻閣平棋，<a href="#" onClick="ch_text_controller.sendMsg('ZF')" class="ZF">草栿</a>在上，承屋蓋之重。
+
+						凡<a href="#" onClick="ch_text_controller.sendMsg('PCF')" class="PCF">平棋方</a>在梁背上，其廣厚並如材，長隨間廣。每架下平棋方一道，（平闇同。又隨架安椽，以遮版縫。其椽若殿宇廣二寸五分，厚一寸五分。餘屋廣二寸二分，厚一寸二分。如材小，即隨宜加減。）絞井口並隨補間。（令縱橫分布方正。若用峻腳，即於四闌內安版貼華。如平闇，即安峻腳椽，廣厚並與平闇椽同。）</p>
+												
+					
+					</div>
+		
+				</div>
+			</div>
+	
+	
+
+
+</body>
+<script>
+</script>
+</html>

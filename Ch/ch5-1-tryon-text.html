@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+ <title>營造法式 list</title>
+    <!-- CSS -->
+    <link href="../Content/Tools/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/Tools/prettify.css" rel="stylesheet" />
+    <link href="../Content/main.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="../Scripts/Tree/dhtmlxtree.css"/>
+	
+	<!-- Tool -->
+    <script src="../Scripts/Tools/JQuery/jquery-2.1.3.min.js"></script>
+    <script src="../Scripts/Tools/jquery.hotkeys.js"></script>
+    <script src="../Scripts/Tools/bootstrap/bootstrap.min.js"></script>
+    <script src="../Scripts/Tools/bootstrap-filestyle/bootstrap-filestyle.min.js"></script>
+    <script src="../Scripts/Tools/prettify.js"></script>
+    <script src="../Scripts/Tools/FileSaver/FileSaver.min.js"></script>
+	
+	<!-- three.js -->
+    <script src="../Scripts/Tools/three.js/three.min.js"></script>
+    <script src="../Scripts/Tools/three.js/js/controls/OrbitControls.js"></script>
+    <script src="../Scripts/Tools/three.js/js/exporters/STLBinaryExporter.js"></script>
+    <script src="../Scripts/Tools/three.js/js/exporters/STLExporter.js"></script>
+    <script src="../Scripts/Tools/three.js/js/libs/stats.min.js"></script>
+    <script src="../Scripts/Tools/three.js/js/loaders/ColladaLoader.js"></script>
+	
+	<!-- 我自己的內容 -->
+	<script src="../Scripts/View/ui.js"></script>
+	<script src="../Scripts/controller.js"></script>
+	<script src="../Scripts/View/sketchpad.js"></script>
+	<script src="../Scripts/Model/shape.js"></script>
+	<script src="../Scripts/ch_text_controller.js"></script>
+	<!-- Tree -->
+	<script src="../Scripts/Tree/dhtmlxtree.js"></script>
+	
+	
+	<script>
+
+        //var shape_draw = false;  //僅支援單栱,重栱,四鋪作(未加昂)
+        //var scale = 2.55;
+
+        //var shape_grammar_controller;
+		var ch_text_controller;
+
+        $(document).ready(function () {
+		
+		ch_text_controller = new ch_text_controller;
+		ch_text_controller.detector();
+
+		
+            //shape_grammar_controller = new controller();
+        });
+		
+
+    </script>
+	
+	<!--<style>
+.index-list {
+    margin: 0.4cm 0.2cm 0.1cm 0.8cm;
+}
+
+</style>--> 
+	
+</head>
+<body>
+	
+								
+			<div class="tb_container" >									
+				<div class="part_container">
+					<h1><span class="mw-headline" id="ch5"><a href="#" onClick="ch_text_controller.sendMsg('Tryon')" class="Tryon">椽</a></span></h1>
+					<div class="index-list">
+					
+					<p>
+
+						○<a href="#" onClick="ch_text_controller.sendMsg('Tryon')" class="Tryon">椽</a><a href="#" onClick="ch_text_controller.sendMsg('Tryon')" class="Tryon"></a>（其名有四：一曰桷，二曰<a href="#" onClick="ch_text_controller.sendMsg('Tryon')" class="Tryon">椽</a>，三曰榱，四曰橑。短<a href="#" onClick="ch_text_controller.sendMsg('Tryon')" class="Tryon">椽</a>其名有二：一曰梀，二曰禁楄。）</p>
+
+					<p>用<a href="#" onClick="ch_text_controller.sendMsg('Tryon')" class="Tryon">椽</a>之製：<a href="#" onClick="ch_text_controller.sendMsg('Tryon')" class="Tryon">椽</a>每架平不過六尺。若殿閣或加五寸至一尺五寸，徑九分至十分。若廳堂，<a href="#" onClick="ch_text_controller.sendMsg('Tryon')" class="Tryon">椽</a>徑七分至八分，餘屋徑六分至七分。長隨架，斜至下架，即加長出簷。每槫上為縫，斜批相搭釘之。（凡用<a href="#" onClick="ch_text_controller.sendMsg('Tryon')" class="Tryon">椽</a>，皆令<a href="#" onClick="ch_text_controller.sendMsg('Tryon')" class="Tryon">椽</a>頭向下而尾在上。）</p>
+					<p>
+						凡布<a href="#" onClick="ch_text_controller.sendMsg('Tryon')" class="Tryon">椽</a>，令一間當間心。若有補間鋪作者，令一間當耍頭心。若四裴回轉角者，並隨角梁分布，令<a href="#" onClick="ch_text_controller.sendMsg('Tryon')" class="Tryon">椽</a>頭朿密得所，過角歸間，（至次角補間鋪作心。）並隨上中架取直。其稀密以兩<a href="#" onClick="ch_text_controller.sendMsg('Tryon')" class="Tryon">椽</a>心相去之廣為法，殿閣廣九寸五分至九寸，副階廣九寸至八寸五分，廳堂廣八寸五分至八寸，廊庫屋廣八寸至七寸五分。
+
+						若屋內有平棋者，即隨<a href="#" onClick="ch_text_controller.sendMsg('Tryon')" class="Tryon">椽</a>長短，令一頭取齊，一頭放過上架當槫釘之，不用裁截。（謂之雁腳釘。）</p>
+												
+					</div>
+		
+				</div>
+			</div>
+	
+	
+
+
+</body>
+<script>
+</script>
+</html>

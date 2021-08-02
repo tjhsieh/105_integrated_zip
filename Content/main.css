@@ -1,0 +1,117 @@
+﻿/*主頁面分割*/
+
+html {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    -ms-scroll-limit: 0 0 0 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: table;
+    overflow: hidden;
+    -ms-scroll-limit: 0 0 0 0;
+}
+
+.toolbar {
+    width: 100%;
+    height: 50px;
+    display: table-row;
+}
+
+.editor {
+    width: 100%;
+    display: table-row;
+}
+
+/*繪圖板相關分割*/
+
+#canvas {
+    height: 95vh;
+	
+    padding-left: 0;
+}
+
+/*右方控制面板相關*/
+
+.tab-pane {
+    max-height: 90vh;
+    overflow: auto;
+}
+
+.exploded_button{
+    padding-top: 10px;
+}
+
+/*tree block*/
+
+
+#grammar_chooser {
+    height: 67vh;
+    padding: 0 10px 10px 10px;
+    display: block;
+    overflow: auto;
+}
+
+/*XML內容預覽*/
+
+#XML_viewer {
+    display: block;
+    max-height: 80vh;
+    overflow: auto;
+}
+
+a:hover {
+    background-color: yellow;
+}
+
+.part_container{ 
+writing-mode: tb-rl; 
+height: 100%;
+} 
+
+.menu_tb_container{ 
+writing-mode: tb-rl;
+width: 100%;
+height:100%;
+overflow: auto;
+background-image:url(../img/background/menu_back9.jpg);
+}
+.tb_container{ 
+background-image:url(../img/background/menu_back9.jpg);
+writing-mode: tb-rl;
+width: 100%;
+height:100%;
+overflow: auto;
+background-position:right top;
+
+}  
+
+.menu_content
+{
+	border: 1px solid black;
+	width: 100%;
+	height:33%;
+	overflow: auto;
+}
+#pic_content
+{
+	background-image:url(../img/background/menu_back9.jpg);
+	background-position: right top ;
+
+}
+
+#menu_tree
+{
+	font-size: 24px;
+}
+.index_content
+{
+	background-position:right top;
+	background-image:url(../img/background/menu_back9.jpg);
+
+}
+
+#gui { position: absolute; top: 50px; left: 0px }

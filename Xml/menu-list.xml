@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tree id="0" radio="1">
+	<item   text="營造法式" id="YJFZ" open="1">
+		<item text="第一卷" id="ch1">
+			<item text="總譯上" id="ch1-1">
+				<item text="宮" id="ch1-1-gou"></item>
+				<item text="闕" id="ch1-1-que"></item>
+				<item text="殿（堂附）" id="ch1-1-que"></item>
+				<item text="樓" id="ch1-1-que"></item>
+				<item text="亭" id="ch1-1-que"></item>
+				<item text="臺榭" id="ch1-1-que"></item>
+				<item text="城" id="ch1-1-que"></item>
+				<item text="牆" id="ch1-1-que"></item>
+				<item text="柱礎" id="ch1-1-que"></item>
+				<item text="定平" id="ch1-1-que"></item>
+				<item text="取正" id="ch1-1-que"></item>
+				<item text="材" id="ch1-1-que"></item>
+				<item text="栱" id="ch1-1-que"></item>
+				<item text="飛昂" id="ch1-1-que"></item>
+				<item text="爵頭" id="ch1-1-que"></item>
+				<item text="枓" id="ch1-1-que"></item>
+				<item text="鋪作" id="ch1-1-que"></item>
+				<item text="平坐" id="ch1-1-que"></item>
+				<item text="梁" id="ch1-1-que"></item>
+				<item text="柱" id="ch1-1-que"></item>
+				<item text="陽馬" id="ch1-1-que"></item>
+				<item text="侏儒柱" id="ch1-1-que"></item>
+				<item text="斜柱" id="ch1-1-que"></item>
+
+				
+			</item>
+			
+		</item>
+		<item text="第二卷" id="ch2">
+			<item text="總譯下" id="ch2-1">
+				<item text="棟" id="ch2-1-dong"></item>
+				<item text="兩際" id="ch2-1-lia_ji"></item>
+				<item text="摶風" id="ch2-1-dong"></item>
+				<item text="柎" id="ch2-1-lia_ji"></item>
+				<item text="椽" id="ch2-1-dong"></item>
+				<item text="檐" id="ch2-1-lia_ji"></item>
+				<item text="舉折" id="ch2-1-dong"></item>
+				<item text="門" id="ch2-1-lia_ji"></item>
+				<item text="烏頭門" id="ch2-1-dong"></item>
+				<item text="華表" id="ch2-1-lia_ji"></item>
+				<item text="窗" id="ch2-1-dong"></item>
+				<item text="平棊" id="ch2-1-lia_ji"></item>
+				<item text="𨷖八藻井" id="ch2-1-dong"></item>
+				<item text="鉤䦨" id="ch2-1-lia_ji"></item>
+				<item text="拒馬义子" id="ch2-1-dong"></item>
+				<item text="屏風" id="ch2-1-lia_ji"></item>
+				<item text="槏柱" id="ch2-1-dong"></item>
+				<item text="露籬" id="ch2-1-lia_ji"></item>
+				<item text="鴟尾" id="ch2-1-dong"></item>
+				<item text="瓦" id="ch2-1-lia_ji"></item>
+				<item text="塗" id="ch2-1-dong"></item>
+				<item text="彩畫" id="ch2-1-lia_ji"></item>
+				<item text="階" id="ch2-1-dong"></item>
+				<item text="磚" id="ch2-1-lia_ji"></item>
+				<item text="井" id="ch2-1-lia_ji"></item>
+			</item>
+			<item text="總例" id="ch2-2">
+				<item text="總例" id="ch2-2-dong"></item>
+			</item>
+			
+		</item>
+		<item text="第三卷" id="ch3">
+			<item text="壕寨制度" id="ch3-1">
+				<item text="取正" id="ch3-1-chu_zen"></item>
+				<item text="定平" id="ch3-1-din_pin"></item>
+				<item text="立基" id="ch3-1-din_pin"></item>
+				<item text="築基" id="ch3-1-din_pin"></item>
+				<item text="城" id="ch3-1-din_pin"></item>
+				<item text="牆" id="ch3-1-din_pin"></item>
+				<item text="築臨水基" id="ch3-1-din_pin"></item>
+			</item>
+			<item text="石作制度" id="ch3-2">
+				<item text="造作次序" id="ch3-2-ja_jo_order"></item>
+				<item text="柱礎" id="ch3-2-ju_zu"></item>
+				<item text="角石" id="ch3-2-ja_jo_order"></item>
+				<item text="角柱" id="ch3-2-ju_zu"></item>
+				<item text="殿階基" id="ch3-2-ja_jo_order"></item>
+				<item text="壓䦨石（地面石）" id="ch3-2-ju_zu"></item>
+				<item text="殿階螭首" id="ch3-2-ja_jo_order"></item>
+				<item text="殿內𨷖八" id="ch3-2-ju_zu"></item>
+				<item text="踏道" id="ch3-2-ja_jo_order"></item>
+				<item text="重臺鉤䦨（單鉤䦨望柱）" id="ch3-2-ju_zu"></item>
+				<item text="螭子石" id="ch3-2-ja_jo_order"></item>
+				<item text="門砧限" id="ch3-2-ju_zu"></item>
+				<item text="地栿" id="ch3-2-ja_jo_order"></item>
+				<item text="流盃渠（剜鑿流盃杯壘造流盃）" id="ch3-2-ju_zu"></item>
+				<item text="壇" id="ch3-2-ja_jo_order"></item>
+				<item text="卷輂水窗" id="ch3-2-ju_zu"></item>
+				<item text="水槽子" id="ch3-2-ja_jo_order"></item>
+				<item text="馬臺" id="ch3-2-ju_zu"></item>
+				<item text="井口石（井蓋子）山棚鋜脚石" id="ch3-2-ja_jo_order"></item>
+				<item text="嶓竿頰		贔屓鼇坐碑" id="ch3-2-ju_zu"></item>
+				<item text="笏頭碣" id="ch3-2-ja_jo_order"></item>
+			</item>
+			
+		</item>
+		<item text="第四卷" id="ch4" open="1">
+			<item text="大木作制度一" id="ch4-1" open="1">
+				<item text="材" id="ch4-1-tsai"></item>
+				<item text="栱" id="ch4-1-gon"></item>
+				<item text="飛昂" id="ch4-1-fa_on"></item>
+				<item text="爵頭" id="ch4-1-jay_to"></item>
+				<item text="枓" id="ch4-1-dou"></item>
+				<item text="總舖作次序" id="ch4-1-all_pu_zou_order"></item>
+				<item text="平作" id="ch4-1-pin_zou"></item>
+			</item>
+			
+			
+		</item>
+		<item text="第五卷" id="ch5" open="1">
+			<item text="大木作制度二" id="ch5-1" open="1">
+				<item text="梁" id="ch5-1-lion"></item>
+				<item text="䦨額" id="ch5-1-lan_a"></item>
+				<item text="柱" id="ch5-1-ju"></item>
+				<item text="陽馬" id="ch5-1-ian_ma"></item>
+				<item text="侏儒柱（斜柱附）" id="ch5-1-ju_lu_ju"></item>
+				<item text="棟" id="ch5-1-don"></item>
+				<item text="摶風版" id="ch5-1-bo_fon_ban"></item>
+				<item text="柎" id="ch5-1-fu"></item>
+				<item text="椽" id="ch5-1-tryon"></item>
+				<item text="檐" id="ch5-1-yen"></item>
+				<item text="舉折" id="ch5-1-g_ze"></item>
+			</item>
+			
+			
+		</item>
+		<item text="第六卷" id="ch6">
+			<item text="小木作制度一" id="ch6-1">
+				<item text="版門（雙扇版門  獨扇版門）" id="ch6-1-ban_mur"></item>
+				<item text="烏頭門" id="ch6-1-u_to_mur"></item>
+				<item text="軟門（牙頭護縫軟門。合版軟門）" id="ch6-1-nuian_mur"></item>
+				<item text="破子櫺窗" id="ch6-1-po_ze_lin_chuang"></item>
+				<item text="睒電窗" id="ch6-1-shan_dian_chuang"></item>
+				<item text="版欞窗" id="ch6-1-ban_ling_chuang"></item>
+				<item text="截間版帳" id="ch6-1-jie_jian_ban_jang"></item>
+				<item text="照壁屏風骨（截間屏風骨。四扇屏風骨）" id="ch6-1-jau_bi_bing_feng_gu"></item>
+				<item text="隔截橫鈐立旌" id="ch6-1-ge_jie_heng_chian_li_jing"></item>
+				<item text="露籬" id="ch6-1-lou_li"></item>
+				<item text="版引檐" id="ch6-1-pin_zou"></item>
+				<item text="水槽" id="ch6-1-ban_yin_yan"></item>
+				<item text="井屋子" id="ch6-1-jing_wu_tz"></item>
+				<item text="地棚" id="ch6-1-di_peng"></item>
+			</item>
+			
+			
+		</item>
+		<item text="第七卷" id="ch7">
+			<item text="小木作制度二" id="ch7-1">
+				<item text="格子門" id="ch7-1-ge_tz_men">
+					<item text="四斜毬文格子" id="ch7-1-sz_shie_chiou_wen_ge_tz"></item>
+					<item text="四斜毬文上出條桱重格眼" id="ch7-1-sz_shie_chiou_wen_shang_chu_tiau_jing_jung_ge_yan"></item>
+					<item text="四直方格眼" id="ch7-1-_sz_jr_fang_ge_yan"></item>
+					<item text="版壁。兩明格子" id="ch7-1-ban_bi"></item>
+				</item>
+				<item text="闌檻鉤窗" id="ch7-1-lan_jian_gou_chuang"></item>
+				<item text="殿內截間格子" id="ch7-1-dian_nei_jie_jian_ge_tz"></item>
+				<item text="堂閣內截間格子" id="ch7-1-tang_ge_nei_jie_jian_ge_tz"></item>
+				<item text="殿閣照壁版" id="ch7-1-dian_ge_jau_bi_ban"></item>
+				<item text="障日版" id="ch7-1-jang_r_ban"></item>
+				<item text="廊屋照壁版" id="ch7-1-lang_wu_jau_bi_ban"></item>
+				<item text="胡梯" id="ch7-1-hu_ti"></item>
+				<item text="垂魚惹草" id="ch7-1-chuei_yu_re_tsau"></item>
+				<item text="栱眼壁版" id="ch7-1-gung_yan_bi_ban"></item>
+				<item text="裹栿版" id="ch7-1-guo_fu_ban"></item>
+				<item text="擗簾竿" id="ch7-1-pi_lian_gan"></item>
+				<item text="護殿閣檐竹網木貼" id="ch7-1-hu_dian_ge_yan_ju_wang_mu_tie"></item>
+			</item>
+			
+			
+		</item>
+		<item text="第八卷" id="ch8">
+			<item text="小木作制度三" id="ch8-1">
+				<item text="平棊" id="ch8-1-ping_ji"></item>
+				<item text="𨷖八藻井" id="ch8-1-dou_ba_tzau_jing"></item>
+				<item text="小𨷖八藻井" id="ch8-1-shiau_dou_ba_tzau_jing"></item>
+				<item text="拒馬義子" id="ch8-1-jiu_ma_yi_tz"></item>
+				<item text="義子" id="ch8-1-yi_tz"></item>
+				<item text="鉤䦨（重臺鉤䦨單鉤䦨）" id="ch8-1-gou_lan"></item>
+				<item text="棵籠子" id="ch8-1-ke_lung_tz"></item>
+				<item text="井亭子" id="ch8-1-jing_ting_tz"></item>
+				<item text="牌" id="ch8-1-pai"></item>
+			</item>
+			
+			
+		</item>
+		<item text="第九卷" id="ch9">
+			<item text="小木作制度四" id="ch9-1">
+				<item text="佛道帳" id="ch9-1-fo_dau_jang"></item>
+			</item>
+		</item>
+		<item text="第十卷" id="ch10">
+			<item text="小木作制度五" id="ch10-1">
+				<item text="牙腳帳" id="ch10-1-ya_jiau_jang"></item>
+				<item text="九脊小帳" id="ch10-1-jiou_ji_shiau_jang"></item>
+				<item text="壁帳" id="ch10-1-bi_jang"></item>
+			</item>	
+		</item>
+		<item text="第十一卷" id="ch11">
+			<item text="小木作制度六" id="ch11-1">
+				<item text="轉輪經藏" id="ch11-1-juan_luen_jing_tsang"></item>
+				<item text="壁藏" id="ch11-1-bi_tsang"></item>
+			</item>	
+		</item>
+		<item text="第十二卷" id="ch12">
+			<item text="彫作制度" id="ch12-1">
+				<item text="混作" id="ch12-1-huen_tzuo"></item>
+				<item text="彫插寫生華" id="ch12-1-diau_cha_shie_sheng_hua"></item>
+				<item text="起突卷葉華" id="ch12-1-	chi_tu_jiuan_ye_hua"></item>
+				<item text="剔地窐葉華" id="ch12-1-ti_di_guei_ye_hua"></item>
+			</item>	
+			<item text="旋作制度" id="ch12-2">
+				<item text="殿堂等雜用名件" id="ch12-2-dian_tang_deng_tza_yung_ming_jian"></item>
+				<item text="照壁版寶床上名件" id="ch12-2-jau_bi_ban_bau_chuang_shang_ming_jian"></item>
+				<item text="佛道帳上名件" id="ch12-2-fo_dau_jang_shang_ming_jian"></item>
+			</item>
+			<item text="鋸作制度" id="ch12-3">
+				<item text="用材植" id="ch12-3-yung_tsai_jr"></item>
+				<item text="抨墨" id="ch12-3-peng_mo"></item>
+				<item text="就餘材" id="ch12-3-jiou_yu_tsai"></item>
+			</item>
+			<item text="竹作制度" id="ch12-4">
+				<item text="造笆" id="ch12-4-tzau_ba"></item>
+				<item text="隔截編道" id="ch12-4-peng_mo"></item>
+				<item text="竹柵" id="ch12-4-ge_jie_bian_dau"></item>
+				<item text="護殿檐雀眼網" id="ch12-4-hu_dian_yan_chiue_yan_wang"></item>
+				<item text="地面棊文簟" id="ch12-4-di_mian_ji_wen_dian"></item>
+				<item text="障日塌等簟" id="ch12-4-jang_r_ta_deng_dian"></item>
+				<item text="竹笍索" id="ch12-4-ju_na_suo"></item>
+			</item>
+		</item>
+		<item text="第十三卷" id="ch13">
+			<item text="瓦作制度" id="ch13-1">
+				<item text="結瓦" id="ch13-1-juan_luen_jing_tsang"></item>
+				<item text="用瓦" id="ch13-1-bi_tsang"></item>
+				<item text="壘屋脊" id="ch13-1-juan_luen_jing_tsang"></item>
+				<item text="用鴟尾" id="ch13-1-bi_tsang"></item>
+				<item text="用獸頭等" id="ch13-1-juan_luen_jing_tsang"></item>
+			</item>
+			<item text="泥作制度" id="ch13-2">
+				<item text="磊牆" id="ch13-2-juan_luen_jing_tsang"></item>
+				<item text="用泥" id="ch13-2-bi_tsang"></item>
+				<item text="畫壁" id="ch13-2-bi_tsang"></item>
+				<item text="立竈（轉煙    直拔）" id="ch13-2-bi_tsang"></item>
+				<item text="釜鑊竈" id="ch13-2-bi_tsang"></item>
+				<item text="茶爐" id="ch13-2-bi_tsang"></item>
+				<item text="壘射垜" id="ch13-2-bi_tsang"></item>
+			</item>				
+		</item>
+		<item text="第十四卷" id="ch14">
+			<item text="彩畫作制度" id="ch14-1">
+				<item text="總制度" id="ch14-1-juan_luen_jing_tsang"></item>
+				<item text="五彩遍裝" id="ch14-1-bi_tsang"></item>
+				<item text="碾玉裝" id="ch14-1-bi_tsang"></item>
+				<item text="表綠疊暈棱間裝（三暈帶紅棱間裝附）" id="ch14-1-juan_luen_jing_tsang"></item>
+				<item text="解綠裝飾屋舍（解綠結華裝附）" id="ch14-1-bi_tsang"></item>
+				<item text="丹粉刷飾屋舍（黃土刷飾附）" id="ch14-1-bi_tsang"></item>
+				<item text="雜間裝" id="ch14-1-juan_luen_jing_tsang"></item>
+				<item text="煉桐油" id="ch14-1-bi_tsang"></item>
+			</item>	
+		</item>
+		<item text="第十五卷" id="ch15">
+			<item text="磚作制度" id="ch15-1">
+				<item text="用磚壘階基" id="ch15-1-juan_luen_jing_tsang"></item>
+				<item text="鋪地面" id="ch15-1-bi_tsang"></item>
+				<item text="牆下隔減" id="ch15-1-juan_luen_jing_tsang"></item>
+				<item text="踏道" id="ch15-1-bi_tsang"></item>
+				<item text="幔道" id="ch15-1-juan_luen_jing_tsang"></item>
+				<item text="須彌坐" id="ch15-1-juan_luen_jing_tsang"></item>
+				<item text="磚牆" id="ch15-1-bi_tsang"></item>
+				<item text="露道" id="ch15-1-juan_luen_jing_tsang"></item>
+				<item text="城壁水道" id="ch15-1-bi_tsang"></item>
+				<item text="卷輂河渠口" id="ch15-1-juan_luen_jing_tsang"></item>
+				<item text="接甑口" id="ch15-1-juan_luen_jing_tsang"></item>
+				<item text="馬臺" id="ch15-1-bi_tsang"></item>
+				<item text="馬槽" id="ch15-1-juan_luen_jing_tsang"></item>
+				<item text="井" id="ch15-1-bi_tsang"></item>
+			</item>
+			<item text="瓦作制度" id="ch15-2">
+				<item text="瓦" id="ch15-2-juan_luen_jing_tsang"></item>
+				<item text="磚" id="ch15-2-bi_tsang"></item>
+				<item text="琉璃瓦等（炒造黃丹附）" id="ch15-2-bi_tsang"></item>
+				<item text="表掍瓦（滑石掍    荼土掍）" id="ch15-2-bi_tsang"></item>
+				<item text="燒變次序" id="ch15-2-bi_tsang"></item>
+				<item text="壘造" id="ch15-2-bi_tsang"></item>
+			</item>				
+		</item>
+		<item text="第十六卷" id="ch16">
+			<item text="壕寨功限" id="ch16-1">
+				<item text="總雜功" id="ch16-1-juan_luen_jing_tsang"></item>
+				<item text="築基" id="ch16-1-bi_tsang"></item>
+				<item text="築城" id="ch16-1-juan_luen_jing_tsang"></item>
+				<item text="築牆" id="ch16-1-bi_tsang"></item>
+				<item text="穿井" id="ch16-1-juan_luen_jing_tsang"></item>
+				<item text="般運功" id="ch16-1-juan_luen_jing_tsang"></item>
+				<item text="供諸作功" id="ch16-1-bi_tsang"></item>
+			</item>
+			<item text="石作功限" id="ch16-2">
+				<item text="總造作功" id="ch16-2-juan_luen_jing_tsang"></item>
+				<item text="柱礎" id="ch16-2-bi_tsang"></item>
+				<item text="角石（角柱）" id="ch16-2-bi_tsang"></item>
+				<item text="殿階基" id="ch16-2-bi_tsang"></item>
+				<item text="地面石（壓䦨石）" id="ch16-2-bi_tsang"></item>
+				<item text="殿階螭首" id="ch16-2-bi_tsang"></item>
+				<item text="殿內𨷖八" id="ch16-2-juan_luen_jing_tsang"></item>
+				<item text="踏道" id="ch16-2-bi_tsang"></item>
+				<item text="單鉤䦨（重臺鉤䦨，望柱）" id="ch16-2-bi_tsang"></item>
+				<item text="螭子石" id="ch16-2-bi_tsang"></item>
+				<item text="門砧限（臥立柣。將軍石。止扉石）" id="ch16-2-bi_tsang"></item>
+				<item text="地栿石" id="ch16-2-bi_tsang"></item>
+				<item text="流盃渠	" id="ch16-2-bi_tsang"></item>
+				<item text="壇" id="ch16-2-bi_tsang"></item>
+				<item text="卷輂水窗" id="ch16-2-bi_tsang"></item>
+				<item text="水槽" id="ch16-2-bi_tsang"></item>
+				<item text="馬臺" id="ch16-2-bi_tsang"></item>
+				<item text="井口石" id="ch16-2-bi_tsang"></item>
+				<item text="山棚鋜腳石" id="ch16-2-bi_tsang"></item>
+				<item text="幡竿頰" id="ch16-2-bi_tsang"></item>
+				<item text="贔屓碑" id="ch16-2-bi_tsang"></item>
+				<item text="笏頭碣" id="ch16-2-bi_tsang"></item>
+			</item>				
+		</item>
+		<item text="第十七卷" id="ch17">
+			<item text="大木作功限一" id="ch17-2">
+				<item text="栱枓等造作功" id="ch17-2-juan_luen_jing_tsang"></item>
+				<item text="殿閣外檐補間鋪作用栱枓等數" id="ch17-2-bi_tsang"></item>
+				<item text="殿閣身槽內補間鋪作用栱枓等數" id="ch17-2-bi_tsang"></item>
+				<item text="樓閣平坐補間鋪作用栱枓等數" id="ch17-2-bi_tsang"></item>
+				<item text="枓口跳每縫用栱枓等數" id="ch17-2-bi_tsang"></item>
+				<item text="把頭絞項作每縫用栱枓等數" id="ch17-2-bi_tsang"></item>
+				<item text="鋪作每間用方桁等數" id="ch17-2-juan_luen_jing_tsang"></item>
+			</item>				
+		</item>
+		<item text="第十八卷" id="ch18">
+			<item text="大木作功限二" id="ch18-2">
+				<item text="殿閣外檐轉角鋪作    用栱枓等數" id="ch18-2-juan_luen_jing_tsang"></item>
+				<item text="殿閣身內轉角鋪作    用栱枓等數" id="ch18-2-bi_tsang"></item>
+				<item text="樓閣平坐轉角鋪作    用栱枓等數" id="ch18-2-bi_tsang"></item>
+			</item>				
+		</item>
+		<item text="第十九卷" id="ch19">
+			<item text="大木作功限三" id="ch19-2">
+				<item text="殿堂樑柱等事件功限" id="ch19-2-juan_luen_jing_tsang"></item>
+				<item text="城門道功限（樓臺鋪作準殿閣法）" id="ch19-2-bi_tsang"></item>
+				<item text="倉厫庫屋功限（其名件以七寸五分材為祖計之，更不加減。常行散屋同" id="ch19-2-bi_tsang"></item>
+				<item text="常行散屋功限（官府廊屋之類同）跳舍行牆功限" id="ch19-2-bi_tsang"></item>
+				<item text="望火樓功限" id="ch19-2-bi_tsang"></item>
+				<item text="營屋功限（其名件以五寸材為祖計之）" id="ch19-2-bi_tsang"></item>
+				<item text="拆修挑拔舍屋功限（飛檐同）" id="ch19-2-juan_luen_jing_tsang"></item>
+				<item text="薦拔抽換柱栿等功限" id="ch19-2-juan_luen_jing_tsang"></item>
+			</item>				
+		</item>
+		<item text="第二十卷" id="ch20">
+			<item text="小木作功限一" id="ch20-2">
+				<item text="版門（獨扇版門。雙扇版門。）" id="ch20-2-juan_luen_jing_tsang"></item>
+				<item text="烏頭門" id="ch20-2-bi_tsang"></item>
+				<item text="軟門（牙頭護縫軟門。合版用楅軟門）" id="ch20-2-bi_tsang"></item>
+				<item text="破子櫺窗" id="ch20-2-bi_tsang"></item>
+				<item text="睒電窗" id="ch20-2-bi_tsang"></item>
+				<item text="版櫺窗" id="ch20-2-bi_tsang"></item>
+				<item text="截間版帳" id="ch20-2-juan_luen_jing_tsang"></item>
+				<item text="照壁屏風骨（截間屏風骨。四扇屏風骨）" id="ch20-2-juan_luen_jing_tsang"></item>
+				<item text="隔截橫鈐立旌" id="ch20-2-bi_tsang"></item>
+				<item text="露籬" id="ch20-2-bi_tsang"></item>
+				<item text="版引檐" id="ch20-2-bi_tsang"></item>
+				<item text="水槽" id="ch20-2-bi_tsang"></item>
+				<item text="井屋子" id="ch20-2-juan_luen_jing_tsang"></item>
+				<item text="地棚" id="ch20-2-juan_luen_jing_tsang"></item>
+			</item>				
+		</item>
+		<item text="第二十一卷" id="ch21">
+			<item text="小木作功限二" id="ch21-2">
+				<item text="格子門（四斜毬文格子。四斜毬文上出條桱重格眼。四直方格眼。版壁。兩明格子）" id="ch21-2-juan_luen_jing_tsang"></item>
+				<item text="䦨檻鉤窗" id="ch21-2-bi_tsang"></item>
+				<item text="殿內截間格子" id="ch21-2-bi_tsang"></item>
+				<item text="堂閣內截間格子" id="ch21-2-bi_tsang"></item>
+				<item text="殿閣照壁版" id="ch21-2-bi_tsang"></item>
+				<item text="障日版" id="ch21-2-bi_tsang"></item>
+				<item text="廊屋照壁版" id="ch21-2-juan_luen_jing_tsang"></item>
+				<item text="胡梯" id="ch21-2-juan_luen_jing_tsang"></item>
+				<item text="垂魚惹草" id="ch21-2-bi_tsang"></item>
+				<item text="栱眼壁版" id="ch21-2-bi_tsang"></item>
+				<item text="裹栿版" id="ch21-2-bi_tsang"></item>
+				<item text="擗簾竿" id="ch21-2-bi_tsang"></item>
+				<item text="護殿閣檐竹綱木貼" id="ch21-2-juan_luen_jing_tsang"></item>
+				<item text="平棊" id="ch21-2-juan_luen_jing_tsang"></item>
+				<item text="𨷖八藻井" id="ch21-2-juan_luen_jing_tsang"></item>
+				<item text="小𨷖八藻井" id="ch21-2-juan_luen_jing_tsang"></item>
+				<item text="拒馬义子" id="ch21-2-bi_tsang"></item>
+				<item text="义子" id="ch21-2-bi_tsang"></item>
+				<item text="鉤䦨（重臺鉤䦨。單鉤䦨。）" id="ch21-2-bi_tsang"></item>
+				<item text="棵籠子" id="ch21-2-bi_tsang"></item>
+				<item text="井亭子" id="ch21-2-juan_luen_jing_tsang"></item>
+				<item text="牌" id="ch21-2-juan_luen_jing_tsang"></item>
+			</item>				
+		</item>
+		<item text="第二十二卷" id="ch22">
+			<item text="小木作功限三" id="ch22-2">
+				<item text="佛道帳" id="ch22-2-juan_luen_jing_tsang"></item>
+				<item text="牙腳帳" id="ch22-2-bi_tsang"></item>
+				<item text="九雜脊小帳" id="ch22-2-bi_tsang"></item>
+				<item text="壁帳" id="ch22-2-bi_tsang"></item>
+			</item>				
+		</item>
+		<item text="第二十三卷" id="ch23">
+			<item text="小木作功限四" id="ch23-2">
+				<item text="轉輪經藏" id="ch23-2-juan_luen_jing_tsang"></item>
+				<item text="壁藏" id="ch23-2-bi_tsang"></item>
+			</item>				
+		</item>
+		<item text="第二十四卷" id="ch24">
+			<item text="諸作功限一" id="ch24-2">
+				<item text="彫木作" id="ch24-2-juan_luen_jing_tsang"></item>
+				<item text="旋作" id="ch24-2-bi_tsang"></item>
+				<item text="鋸作" id="ch24-2-bi_tsang"></item>
+				<item text="竹作" id="ch24-2-bi_tsang"></item>
+			</item>				
+		</item>
+		<item text="第二十五卷" id="ch25">
+			<item text="諸作功限二" id="ch25-2">
+				<item text="瓦作" id="ch25-2-juan_luen_jing_tsang"></item>
+				<item text="泥作" id="ch25-2-bi_tsang"></item>
+				<item text="彩畫作" id="ch25-2-bi_tsang"></item>
+				<item text="磚作" id="ch25-2-bi_tsang"></item>
+				<item text="作" id="ch25-2-bi_tsang"></item>
+			</item>				
+		</item>
+		<item text="第二十六卷" id="ch26">
+			<item text="諸作料例一" id="ch26-2">
+				<item text="石作" id="ch26-2-juan_luen_jing_tsang"></item>
+				<item text="大木作（小木作附）" id="ch26-2-bi_tsang"></item>
+				<item text="竹作" id="ch26-2-bi_tsang"></item>
+				<item text="瓦作" id="ch26-2-bi_tsang"></item>
+			</item>				
+		</item>
+		<item text="第二十七卷" id="ch27">
+			<item text="諸作料例二" id="ch27-2">
+				<item text="泥作" id="ch27-2-juan_luen_jing_tsang"></item>
+				<item text="彩畫作" id="ch27-2-bi_tsang"></item>
+				<item text="磚作" id="ch27-2-bi_tsang"></item>
+				<item text="作" id="ch27-2-bi_tsang"></item>
+			</item>				
+		</item>
+		<item text="第二十八卷" id="ch28">
+			<item text="諸作用釘料例" id="ch28-2">
+				<item text="諸作料例二" id="ch28-2">
+					<item text="用釘料例" id="ch28-2-juan_luen_jing_tsang"></item>
+					<item text="用釘數" id="ch28-2-bi_tsang"></item>
+					<item text="通用釘料例" id="ch28-2-bi_tsang"></item>
+				</item>
+				<item text="諸作用膠料例" id="ch28-2-juan_luen_jing_tsang"></item>
+				<item text="諸作等第" id="ch28-2-bi_tsang"></item>
+			</item>				
+		</item>
+		<item text="第二十九卷" id="ch29">
+			<item text="總例圖樣" id="ch29-1">
+				<item text="圜方方圜圖" id="ch29-2-juan_luen_jing_tsang"></item>
+			</item>
+			<item text="壕寨制度圖樣" id="ch29-2">
+				<item text="景表版第一" id="ch29-2-juan_luen_jing_tsang"></item>
+				<item text="水平真尺第二" id="ch29-2-juan_luen_jing_tsang"></item>
+			</item>	
+			<item text="石作制度圖樣" id="ch29-3">
+				<item text="柱礎角石等第一" id="ch29-2-juan_luen_jing_tsang"></item>
+				<item text="踏道螭首第二" id="ch29-2-juan_luen_jing_tsang"></item>
+				<item text="殿內𨷖八第三" id="ch29-2-juan_luen_jing_tsang"></item>
+				<item text="鉤䦨門砧第四" id="ch29-2-juan_luen_jing_tsang"></item>
+				<item text="流盃渠第五" id="ch29-2-juan_luen_jing_tsang"></item>
+			</item>
+		</item>
+		<item text="第三十卷" id="ch30">
+			<item text="大木作制度圖樣上" id="ch30-2">
+				<item text="栱枓等卷殺第一" id="ch30-2-juan_luen_jing_tsang"></item>
+				<item text="梁柱等卷殺第二" id="ch30-2-bi_tsang"></item>
+				<item text="下昂上昂出跳分數第三" id="ch30-2-bi_tsang"></item>
+				<item text="舉折屋舍分數第四" id="ch30-2-bi_tsang"></item>
+				<item text="絞割鋪作栱昂枓等所用卯口第五" id="ch30-2-juan_luen_jing_tsang"></item>
+				<item text="梁額等卯口第六" id="ch30-2-bi_tsang"></item>
+				<item text="合柱鼓卯第七" id="ch30-2-bi_tsang"></item>
+				<item text="槫縫襻間第八" id="ch30-2-bi_tsang"></item>
+				<item text="鋪作轉角正樣第九" id="ch30-2-bi_tsang"></item>
+			</item>				
+		</item>
+		<item text="第三十一卷" id="ch31">
+			<item text="木作制度圖樣下" id="ch31-2">
+				<item text="殿閣地盤分槽第十" id="ch31-2-juan_luen_jing_tsang"></item>
+				<item text="殿堂等八鋪作（副階六鋪作）雙槽（斗底槽準此。下雙槽同）草架側樣第十一" id="ch31-2-bi_tsang"></item>
+				<item text="殿堂等七鋪作（副階五鋪作）雙槽草架側樣第十二" id="ch31-2-bi_tsang"></item>
+				<item text="殿堂等五鋪作（副階四鋪作）單槽草架側樣第十三" id="ch31-2-bi_tsang"></item>
+				<item text="殿堂等六鋪作分心槽草架側樣第十四" id="ch31-2-juan_luen_jing_tsang"></item>
+				<item text="廳堂等（自十架椽至四架椽）間縫內用梁柱第十五" id="ch31-2-bi_tsang"></item>
+			</item>				
+		</item>
+		<item text="第三十二卷" id="ch32">
+			<item text="小木作制度圖樣" id="ch32-1">
+				<item text="門窗格子門等第一（垂魚附。）" id="ch32-1-juan_luen_jing_tsang"></item>
+				<item text="平棊鉤䦨等第二" id="ch32-1-juan_luen_jing_tsang"></item>
+				<item text="殿閣門亭等牌第三" id="ch32-1-juan_luen_jing_tsang"></item>
+				<item text="佛道帳經藏第四" id="ch32-1-juan_luen_jing_tsang"></item>
+			</item>
+			<item text="彫木作制度圖樣" id="ch32-2">
+				<item text="混作第一" id="ch32-2-juan_luen_jing_tsang"></item>
+				<item text="栱眼內彫插第二" id="ch32-2-juan_luen_jing_tsang"></item>
+				<item text="格子門等腰華版第三" id="ch32-2-juan_luen_jing_tsang"></item>
+				<item text="平棊華盤第四" id="ch32-2-juan_luen_jing_tsang"></item>
+				<item text="雲栱等雜樣第五" id="ch32-2-juan_luen_jing_tsang"></item>
+			</item>
+		</item>
+		<item text="第三十三卷" id="ch33">
+			<item text="彩畫作制度圖樣上" id="ch33-2">
+				<item text="五彩雜華第一" id="ch33-2-juan_luen_jing_tsang"></item>
+				<item text="五彩瑣文第二" id="ch33-2-bi_tsang"></item>
+				<item text="飛仙及飛走等第三" id="ch33-2-bi_tsang"></item>
+				<item text="騎跨仙真第四" id="ch33-2-bi_tsang"></item>
+				<item text="五彩額柱第五" id="ch33-2-juan_luen_jing_tsang"></item>
+				<item text="五彩平棊第六" id="ch33-2-bi_tsang"></item>
+				<item text="碾玉雜華第七" id="ch33-2-bi_tsang"></item>
+				<item text="碾玉瑣文第八" id="ch33-2-bi_tsang"></item>
+				<item text="碾玉額柱第九" id="ch33-2-bi_tsang"></item>
+				<item text="碾玉平棊第十" id="ch33-2-bi_tsang"></item>
+			</item>				
+		</item>
+		<item text="第三十四卷" id="ch34">
+			<item text="彩畫作制度圖樣下" id="ch34-1">
+				<item text="五彩遍裝名件第十一" id="ch34-2-juan_luen_jing_tsang"></item>
+				<item text="碾玉裝名件第十二" id="ch34-2-bi_tsang"></item>
+				<item text="青綠疊暈棱間裝名件第十三" id="ch34-2-bi_tsang"></item>
+				<item text="三暈帶紅棱間裝名件第十四" id="ch34-2-bi_tsang"></item>
+				<item text="兩暈棱間內畫松文裝名件第十五" id="ch34-2-juan_luen_jing_tsang"></item>
+				<item text="解綠結華裝名件第十六（解綠裝附。）" id="ch34-2-bi_tsang"></item>
+			</item>	
+			<item text="刷飾制度圖樣" id="ch34-2">
+				<item text="丹粉刷名件第一" id="ch34-2-juan_luen_jing_tsang"></item>
+				<item text="黃土刷飾名件第二" id="ch34-2-juan_luen_jing_tsang"></item>
+			</item>
+		</item>
+		
+	</item>
+</tree>

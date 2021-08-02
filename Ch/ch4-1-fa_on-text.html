@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+ <title>營造法式 list</title>
+    <!-- CSS -->
+    <link href="../Content/Tools/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/Tools/prettify.css" rel="stylesheet" />
+    <link href="../Content/main.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="../Scripts/Tree/dhtmlxtree.css"/>
+	
+	<!-- Tool -->
+    <script src="../Scripts/Tools/JQuery/jquery-2.1.3.min.js"></script>
+    <script src="../Scripts/Tools/jquery.hotkeys.js"></script>
+    <script src="../Scripts/Tools/bootstrap/bootstrap.min.js"></script>
+    <script src="../Scripts/Tools/bootstrap-filestyle/bootstrap-filestyle.min.js"></script>
+    <script src="../Scripts/Tools/prettify.js"></script>
+    <script src="../Scripts/Tools/FileSaver/FileSaver.min.js"></script>
+	
+	<!-- three.js -->
+    <script src="../Scripts/Tools/three.js/three.min.js"></script>
+    <script src="../Scripts/Tools/three.js/js/controls/OrbitControls.js"></script>
+    <script src="../Scripts/Tools/three.js/js/exporters/STLBinaryExporter.js"></script>
+    <script src="../Scripts/Tools/three.js/js/exporters/STLExporter.js"></script>
+    <script src="../Scripts/Tools/three.js/js/libs/stats.min.js"></script>
+    <script src="../Scripts/Tools/three.js/js/loaders/ColladaLoader.js"></script>
+	
+	<!-- 我自己的內容 -->
+	<script src="../Scripts/View/ui.js"></script>
+	<script src="../Scripts/controller.js"></script>
+	<script src="../Scripts/View/sketchpad.js"></script>
+	<script src="../Scripts/Model/shape.js"></script>
+	<script src="../Scripts/ch_text_controller.js"></script>
+	<!-- Tree -->
+	<script src="../Scripts/Tree/dhtmlxtree.js"></script>
+	
+	
+	<script>
+
+        //var shape_draw = false;  //僅支援單栱,重栱,四鋪作(未加昂)
+        //var scale = 2.55;
+
+        //var shape_grammar_controller;
+		var ch_text_controller;
+
+        $(document).ready(function () {
+		
+		ch_text_controller = new ch_text_controller;
+		ch_text_controller.detector();
+
+		
+            //shape_grammar_controller = new controller();
+        });
+		
+
+    </script>
+	
+	<!--<style>
+.index-list {
+    margin: 0.4cm 0.2cm 0.1cm 0.8cm;
+}
+
+</style>--> 
+	
+</head>
+<body>
+	
+								
+			<div class="tb_container" >									
+				<div class="part_container">
+					<h1><span class="mw-headline" id="ch1">飛昂</span></h1>
+					<div class="index-list">
+					
+					<p>
+
+						○飛昂（其名有五：一曰櫼，二曰飛昂，三曰英昂，四曰斜角，五曰下昂。）造昂之製有二：</p>
+
+					<p>一曰<a href="#" onClick="ch_text_controller.sendMsg('down_on')" class="down_on">下昂</a>：自上一材垂尖向下，從枓底心下取直，其長二十三分，（其昂身上徹屋內。）自枓外斜殺向下，留厚二分，昂麵中<幽頁>二分，令<幽頁>勢圜和。（亦有於昂麵上隨<幽頁>加一分。訛殺至兩棱者，謂之琴麵昂。亦有自枓外斜殺至尖者，其昂麵平直，謂之批竹昂。）</p>
+
+					<p>凡昂安枓處，高下及遠近皆準一跳。若從下第一昂，自上一材下出，斜垂向下枓口內，以華頭子承之。（華頭子自枓口外長九分，將昂勢盡處勻分，刻作兩卷瓣，每瓣長四分。）如至第二昂以上，隻於枓口內出昂。其承昂枓口及昂身下皆斜開鐙口，令上大下，與昂身相銜。</p>
+
+					<p>凡昂上坐枓，四鋪作、五鋪作並歸平，六鋪作以上自五鋪作外昂上枓並再向下二分。至五分。如逐跳計心造，即於昂身開方斜口，深二分，兩麵各開子陰深一分。</p>
+
+					<p>若角昂，以斜長加之。角昂之上別施由昂。（長同角昂，廣或加一分至二分。所坐枓上安角神，若寶藏神，或寶瓶。）</p>
+
+					<p>若昂身於屋內上出，皆至下平槫。若四鋪作用插昂，即其長斜隨跳頭。（插昂又謂之掙昂，亦謂之矮昂。）</p>
+
+					<p>凡昂栓，廣四分至五分，厚二分。若四鋪作，即於第一跳上用之，五鋪作至八鋪作並於第二跳上用之，並上徹昂背，（自一昂至三昂隻用一栓，徹上麵昂之背。）下入栱身之半或三分之一。</p>
+					
+					<p>若屋內徹上明造，即用挑斡。或隻挑一枓，或挑一材兩契。（謂一栱上下皆有枓也。若不出昂而用挑斡者，即騎束闌方下昂桯。）</p>
+					
+					<p>如用平棋，即自槫安蜀柱以義昂尾。如當柱頭，即以草栿或丁栿壓之。</p>
+					
+					<p>二曰上昂：頭向外留六分。其昂頭外出，昂身斜收向裹，並通過柱心。</p>
+					
+					<p>如五鋪作單抄上用者，自櫨枓心出第一跳華栱心，長二十五分，第二跳上昂心，長二十二分。（其第一跳上枓口內用鞾楔。）其平棋方至櫨枓口內，共高五材四契。（其第一跳重栱計心造。）</p>
+					
+					<p>如六鋪作重抄上用者，自櫨枓心出第一跳華栱心，長二十七分。第二跳華栱心及上昂心共長二十八分。（華栱上用連珠枓。其枓口內用鞾楔，七鋪作、八鋪作同。）其平棋方至櫨枓口內共高六材五契。於兩跳之內當中施騎枓栱。</p>
+					
+					<p>如七鋪作於重抄上用上昂兩重者，自櫨枓心出第一跳華栱心長二十三分第二跳華栱心長一十五分，（華栱上用連珠枓。）第三跳上昂心（兩重上昂共此一跳。）長三十五分。其平棋方至櫨枓口內共高七材六契。</p>
+					
+					<p>如八鋪作於三抄上用上昂兩重者，自櫨枓心出第一跳華栱心長二十六分，第二跳第三跳並華栱心各長一十六分，（於第三跳華栱上用連珠枓。）第四跳上昂心（兩重上昂共此一跳。）長二十六分。其平棋方至櫨枓口內共高八材七契。（其騎枓栱與七鋪作同。）</p>
+					
+					<p>凡昂之廣厚並如材。其下昂施之於外跳，或單栱，或重栱，或偷心，或計心造。上昂施之裹跳之上及平坐鋪作之內，昂背斜尖皆至下枓底外，昂底於跳頭枓口內出。其枓口外用鞾楔（刻作三卷瓣。）</p>
+					
+					<p>凡騎枓栱宜單用，其下跳並偷心造。（凡鋪作計心，偷心，並在總鋪作次序製度之內。）</p>
+						
+					
+					</div>
+		
+				</div>
+			</div>
+	
+	
+
+
+</body>
+<script>
+</script>
+</html>

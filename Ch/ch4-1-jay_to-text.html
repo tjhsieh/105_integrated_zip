@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+ <title>營造法式 list</title>
+    <!-- CSS -->
+    <link href="../Content/Tools/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/Tools/prettify.css" rel="stylesheet" />
+    <link href="../Content/main.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="../Scripts/Tree/dhtmlxtree.css"/>
+	
+	<!-- Tool -->
+    <script src="../Scripts/Tools/JQuery/jquery-2.1.3.min.js"></script>
+    <script src="../Scripts/Tools/jquery.hotkeys.js"></script>
+    <script src="../Scripts/Tools/bootstrap/bootstrap.min.js"></script>
+    <script src="../Scripts/Tools/bootstrap-filestyle/bootstrap-filestyle.min.js"></script>
+    <script src="../Scripts/Tools/prettify.js"></script>
+    <script src="../Scripts/Tools/FileSaver/FileSaver.min.js"></script>
+	
+	<!-- three.js -->
+    <script src="../Scripts/Tools/three.js/three.min.js"></script>
+    <script src="../Scripts/Tools/three.js/js/controls/OrbitControls.js"></script>
+    <script src="../Scripts/Tools/three.js/js/exporters/STLBinaryExporter.js"></script>
+    <script src="../Scripts/Tools/three.js/js/exporters/STLExporter.js"></script>
+    <script src="../Scripts/Tools/three.js/js/libs/stats.min.js"></script>
+    <script src="../Scripts/Tools/three.js/js/loaders/ColladaLoader.js"></script>
+	
+	<!-- 我自己的內容 -->
+	<script src="../Scripts/View/ui.js"></script>
+	<script src="../Scripts/controller.js"></script>
+	<script src="../Scripts/View/sketchpad.js"></script>
+	<script src="../Scripts/Model/shape.js"></script>
+	<script src="../Scripts/ch_text_controller.js"></script>
+	<!-- Tree -->
+	<script src="../Scripts/Tree/dhtmlxtree.js"></script>
+	
+	
+	<script>
+
+        //var shape_draw = false;  //僅支援單栱,重栱,四鋪作(未加昂)
+        //var scale = 2.55;
+
+        //var shape_grammar_controller;
+
+       var ch_text_controller;
+
+        $(document).ready(function () {
+		//console.log("window test!:" +window.opener.name);
+		
+			ch_text_controller = new ch_text_controller;
+			ch_text_controller.detector();
+			});
+
+		 
+		
+    </script>
+	
+	<!--<style>
+.index-list {
+    margin: 0.4cm 0.2cm 0.1cm 0.8cm;
+}
+
+</style>--> 
+	
+</head>
+<body>
+	
+								
+			<div class="tb_container" >									
+				<div class="part_container">
+					<h1><span class="mw-headline" id="ch4">爵頭</span></h1>
+					<div class="index-list">
+					
+					<p>
+
+						○爵頭（其名有四：一曰爵頭，二曰耍頭，三曰胡孫頭，四曰蜉從頭。）</p>
+
+					<p>造<a href="#" onClick="ch_text_controller.sendMsg('LST')" class="LST">耍頭</a>之製：用足材，自枓心出，長二十五分。自上棱斜殺向下六分，自頭上量五分，斜殺向下二分，（謂之鵲台。）兩麵留心各斜抹五分，下隨尖各斜殺向上二分，長五分。下大棱上兩麵開龍牙口，廣半分，斜梢向尖。（又謂之錐眼。）開口與華栱同。與令栱相六，安於齊心枓下</p>
+
+					<p>若累鋪作數多，皆隨所出之跳加長，（若角內用，則以斜長加之。）於裹外令栱兩出安之。如上下有疑昂勢處，即隨昂勢斜殺，放過昂身。或有不出耍頭者，皆於裹外令栱之內安到心股卯。（隻用單材。）</p>
+
+					
+						
+					
+					</div>
+		
+				</div>
+			</div>
+	
+	
+
+
+</body>
+<script>
+</script>
+</html>
